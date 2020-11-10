@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프로젝트 이름</title>
+    <meta name="description" content="Prtfolio for worldd-renowned software engineer HoJun">
+    <meta name="author" content="NAMONO">
+    <link rel="icon" type="image/png" href="imgs/favicon.png"/>
+    <script src="https://kit.fontawesome.com/47f9d77be1.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <!-- 네비게이션 바 -->
+    <nav id="navbar">
+        <div class="navbar__logo">
+            <i class="fab fa-diaspora"></i>
+            <a href="#">메인페이지</a>
+        </div>
+            <ul class="navbar__menu">
+                <li class="navbar__menu__item active" data-link="#home">공지사항</li>
+                <li class="navbar__menu__item" data-link="#Review">뉴스</li>
+                <li class="navbar__menu__item" data-link="#about">문의사항</li>
+                <li class="navbar__menu__item" data-link="#work">제품들</li>
+                <li class="navbar__menu__item" data-link="#Review">사용후기</li>
+                <li class="navbar__menu__item" data-link="#QnA">QnA</li>
+            </ul>
+
+        <!-- Toggle buttton -->
+        <button class="navbar__toggle-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+        
+    </nav>
+
+    <!-- 메인 -->
+    <Section id="home">
+        <div class="home__container">
+            <img 
+        src="imgs/kickboard.png" 
+        alt="KickBorad" 
+        class="home__avatar"
+        />
+        <h1 class="home__title">회사이름 <br />회사로고</h1>
+        <h2 class="home__description">설명</h2>
+        <button class="home__contact">대여하러가기</button>
+        </div>
+    </Section>
+
+    <!-- 소식 -->
+    <section id="about" class="section section__container">
+        <h1>소식란</h1>
+        <div class="about__news">
+            <div class="news">
+                
+                <h2 class="news__title">공지사항</h2>
+                <div class="news__description">
+                    여기부터 내용들
+                </div>
+            </div>
+            <div class="news">
+                <h2 class="news__title">문의사항</h2>
+                <div class="news__description">
+                    여기부터 내용들
+                </div>
+                
+            </div>
+            <div class="news">
+                <h2 class="news__title">뉴스</h2>
+                <div class="news__description">
+                    여기부터 내용들
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- 제품 -->
+    <section id="product" class="section">
+        <div class="section__container">
+        <h1>제품들</h1>
+        <h3>제품군</h3>
+        <div class="product__categories">
+            <button class="category__btn selected" data-filter="*">
+                전체
+                <span class="category__count">
+                    8
+                </span>
+            </button>
+            <button class="category__btn" data-filter="product1">
+                종류1
+                <span class="category__count">
+                    3
+                </span>
+            </button>
+            <button class="category__btn" data-filter="product2">
+                종류2
+                <span class="category__count">
+                    3
+                </span>
+            </button>
+            <button class="category__btn" data-filter="product3">
+                종류3
+                <span class="category__count">
+                    2
+                </span>
+            </button>
+        </div>
+
+        <!-- 1 -->
+        <div class="product__projects">
+            <a 
+            href="" 
+            class="product" 
+            target="blank"
+            data-type="product1"
+            >
+            <img 
+            src="imgs/kickboard.png" 
+            alt="kickboard"
+            class="product__img">
+            <div class="product__description">
+                <h3>제품이름</h3>
+                <span>제품 설명</span>
+            </div>
+        </a>
+        
+
+        <!-- 2 -->
+            <a 
+            href="" 
+            class="product" 
+            target="blank"
+            data-type="product1"
+            >
+            <img 
+            src="imgs/kickboard.png" 
+            alt="kickboard"
+            class="product__img">
+            <div class="product__description">
+                <h3>제품이름</h3>
+                <span>제품 설명</span>
+            </div>
+        </a>
+        
+
+        <!-- 3 -->
+            <a 
+            href="" 
+            class="product" 
+            target="blank"
+            data-type="product1"
+            >
+            <img 
+            src="imgs/kickboard.png" 
+            alt="kickboard"
+            class="product__img">
+            <div class="product__description">
+                <h3>제품이름</h3>
+                <span>제품 설명</span>
+            </div>
+        </a>
+
+        <!-- 4 -->
+            <a 
+            href="" 
+            class="product" 
+            target="blank"
+            data-type="product2"
+            >
+            <img 
+            src="imgs/kickboard.png" 
+            alt="kickboard"
+            class="product__img"
+            >
+            <div class="product__description">
+                <h3>제품이름</h3>
+                <span>제품 설명</span>
+            </div>
+        </a>
+
+        <!-- 5 -->
+            <a 
+            href="" 
+            class="product" 
+            target="blank"
+            data-type="product2"
+            >
+            <img 
+            src="imgs/kickboard.png" 
+            alt="kickboard"
+            class="product__img"
+            >
+            <div class="product__description">
+                <h3>제품이름</h3>
+                <span>제품 설명</span>
+            </div>
+        </a>
+
+        <!-- 6 -->
+            <a 
+            href="" 
+            class="product" 
+            target="blank"
+            data-type="product2"
+            >
+            <img 
+            src="imgs/kickboard.png" 
+            alt="kickboard"
+            class="product__img"
+            >
+            <div class="product__description">
+                <h3>제품이름</h3>
+                <span>제품 설명</span>
+            </div>
+        </a>
+
+        <!-- 7 -->
+            <a 
+            href="" 
+            class="product" 
+            target="blank"
+            data-type="product3"
+            >
+            <img 
+            src="imgs/kickboard.png" 
+            alt="kickboard"
+            class="product__img">
+            <div class="product__description">
+                <h3>제품이름</h3>
+                <span>제품 설명</span>
+            </div>
+        </a>
+
+        <!-- 8 -->
+            <a 
+            href="" 
+            class="product" 
+            target="blank"
+            data-type="product3"
+            >
+            <img 
+            src="imgs/kickboard.png" 
+            alt="kickboard"
+            class="product__img"
+            >
+            <div class="product__description">
+                <h3>제품이름</h3>
+                <span>제품 설명</span>
+            </div>
+        </a>
+        </div>
+        </div>
+    </section>
+
+    <!-- 후기 Review -->
+    <section id="Review" class="section">
+        <div class="section__container">
+        <h1>사용후기</h1>
+        <h3>모두의 후기</h3>
+        <div class="Reviews">
+        <!-- 1 -->      
+        <div class="Review">
+            <div class="Review__speech-bubble">
+            <p>
+                내용들
+            </p>
+            <p class="name"><a href="">사용후기</a></p>
+            </div>
+        </div>
+        <!-- 2 -->
+        <div class="Review">
+            <div class="Review__speech-bubble">
+            
+            <p>
+                내용들
+            </p>
+            <p class="name"><a href="">사용후기</a>
+            </p>    
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </section>
+
+    <!-- 문의? Contact -->
+    <section id="contact" class="section">
+        <h1 class="contact__title">문의</h1>
+        <h2 class="contact__email">이메일~~</h2>
+        <h2 class="contact__email">링크?</h2>
+        <p class="contact__rights">2020 Project - All rights reserved</p>
+    </section>
+
+    <!-- Arrow up-->
+    <button class="arrow-up">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+</body>
+</html>
