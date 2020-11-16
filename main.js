@@ -30,7 +30,7 @@ navbarToggleBtn.addEventListener('click', ()=> {
 
 
 
-// Projects
+// product
 const productBtnContainer = document.querySelector('.product__categories');
 const productContainer = document.querySelector('.product__projects')
 const products = document.querySelectorAll('.product')
