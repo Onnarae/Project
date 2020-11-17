@@ -3,10 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>프로젝트 이름</title>
-    <meta name="description" content="Prtfolio for worldd-renowned software engineer HoJun">
-    <meta name="author" content="NAMONO">
-    <link rel="icon" type="image/png" href="imgs/favicon.png"/>
+    <title>SWING</title>
+    <link rel="icon" type="image/png" href="imgs/logo.jpg"/>
     <script src="https://kit.fontawesome.com/47f9d77be1.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css"/>
@@ -15,18 +13,19 @@
 <body>
     <!-- 네비게이션 바 -->
     <nav id="navbar">
-        <div class="navbar__logo">
-            <i class="fas fa-motorcycle"></i>
-            <a href=""></a>메인페이지</a>
-        </div>
+        <a href="">
+        
+            <img src="imgs/logo.jpg"  class="navbar__logo"></img>
+        
+        </a>
             <ul class="navbar__menu">
-                <li class="navbar__menu__item active" data-link="#home">공지사항</li>
-                <li class="navbar__menu__item" data-link="#Review">뉴스</li>
-                <li class="navbar__menu__item" data-link="#about">문의사항</li>
-                <li class="navbar__menu__item" data-link="#work">제품들</li>
-                <li class="navbar__menu__item" data-link="#Review">사용후기</li>
-                <li class="navbar__menu__item" data-link="#QnA">QnA</li>
-                <li class="navbar__menu__item" data-link="#Login">Login</li>
+                <a href=""><li class="navbar__menu__item active" >공지사항</li></a>
+                <li class="navbar__menu__item" >뉴스</li>
+                <li class="navbar__menu__item" >문의사항</li>
+                <li class="navbar__menu__item" >제품들</li>
+                <li class="navbar__menu__item" >사용후기</li>
+                <li class="navbar__menu__item" >QnA</li>
+                <li class="navbar__menu__item" >Login</li>
             </ul>
 
         <!-- Toggle buttton -->
@@ -37,10 +36,11 @@
     </nav>
 
     <!-- 메인 -->
-    <Section id="home">
+    <Section id="home" >
         <div class="home__container">
-        <h1 class="home__title">회사이름 <br />회사로고</h1>
-        <h2 class="home__description">설명</h2>
+        <h1 class="home__title">Move with Style</h1>
+        <h2 class="home__description">공유킥보드로 대여와 반납을 자유롭게<br/>
+            그리고 스타일리쉬하게</h2>
         <button class="home__contact">대여하러가기</button>
         </div>
     </Section>
@@ -50,50 +50,71 @@
         <h1>소식란</h1>
         <div class="about__news">
             <div class="news">
-            <fieldset>
-                <legend><h2 class="news__title">공지사항</h2></legend>
+                <a href=""><p class="news__title">공지사항<i class="fas fa-check-circle"></i></p></a>
                 <div class="news__description">
-                <ul class="news_ul">
-                    <li>공지사항공지사항공지사항</li>
-                    <li>공지사항공지사항공지사항</li>
-                    <li>공지사항공지사항공지사항</li>
-                    <li>공지사항공지사항공지사항</li>
-                    <li>공지사항공지사항공지사항</li>
-                    <li>공지사항공지사항공지사항</li>
-                </ul>
+                <table border="0" summary>
+                    <tbody class="news_tbody">
+                    <tr class="news_tr">
+                        <td class="news_td"><a href="">공지사항 안내사항 입니다</a></td>
+                    </tr>
+                    <tr class="news_tr">
+                        <td class="news_td"><a href="">공지사항 안내사항 입니다</a></td>
+                    </tr>
+                    <tr class="news_tr">
+                        <td class="news_td"><a href="">공지사항 안내사항 입니다</a></td>
+                    </tr>
+                    <tr class="news_tr">
+                        <td class="news_td"><a href="">공지사항 안내사항 입니다</a></td>
+                    </tr>
+                </tbody>
+                </table>
                 </div>
-            </fieldset>
             </div>
             <div class="news">
-                <fieldset>
-                    <legend><h2 class="news__title">문의사항</h2></legend>
+                <a href=""><p class="news__title">문의사항<i class="fas fa-check-circle"></i></p></a>
                 <div class="news__description">
-                    <ul class="news_ul">
-                        <li>문의사항문의사항문의사항</li>
-                        <li>문의사항문의사항문의사항</li>
-                        <li>문의사항문의사항문의사항</li>
-                        <li>문의사항문의사항문의사항</li>
-                        <li>문의사항문의사항문의사항</li>
-                        <li>문의사항문의사항문의사항</li>
-                    </ul>
+                    <table border="0" summary>
+                        <tbody class="news_tbody">
+                        <tr class="news_tr">
+                            <td class="news_td"><a href="">문의사항 안내사항 입니다</a></td>
+                        </tr>
+                        <tr class="news_tr">
+                            <td class="news_td"><a href="">문의사항 안내사항 입니다</a></td>
+                        </tr>
+                        <tr class="news_tr">
+                            <td class="news_td"><a href="">문의사항 안내사항 입니다</a></td>
+                        </tr>
+                        <tr class="news_tr">
+                            <td class="news_td"><a href="">문의사항 안내사항 입니다</a></td>
+                        </tr>
+                    </tbody>
+                    </table>
                 </div>
-            </fieldset>
+            
             </div>
             <div class="news">
-                <fieldset>
-                    <legend><h2 class="news__title">뉴스</h2></legend>
+                <a href=""><p class="news__title">뉴스<i class="fas fa-check-circle"></i></p></a>
                 <div class="news__description">
-                    <ul class="news_ul">
-                        <li>뉴스뉴스뉴스뉴스뉴스뉴스</li>
-                        <li>뉴스뉴스뉴스뉴스뉴스뉴스</li>
-                        <li>뉴스뉴스뉴스뉴스뉴스뉴스</li>
-                        <li>뉴스뉴스뉴스뉴스뉴스뉴스</li>
-                        <li>뉴스뉴스뉴스뉴스뉴스뉴스</li>
-                        <li>뉴스뉴스뉴스뉴스뉴스뉴스</li>
-                    </ul>
+                    <table border="0" summary>
+                        <tbody class="news_tbody">
+                        <tr class="news_tr">
+                            <td class="news_td"><a href="">뉴스 안내사항 입니다</a></td>
+                        </tr>
+                        <tr class="news_tr">
+                            <td class="news_td"><a href="">뉴스 안내사항 입니다</a></td>
+                        </tr>
+                        <tr class="news_tr">
+                            <td class="news_td"><a href="">뉴스 안내사항 입니다</a></td>
+                        </tr>
+                        <tr class="news_tr">
+                            <td class="news_td"><a href="">뉴스 안내사항 입니다</a></td>
+                        </tr>
+                    </tbody>
+                    </table>
                 </div>
-                </fieldset>
+                
             </div>
+            
         </div>
     </section>
 
@@ -105,27 +126,15 @@
         <div class="product__categories">
             <button class="category__btn selected" data-filter="*">
                 전체
-                <span class="category__count">
-                    8
-                </span>
             </button>
             <button class="category__btn" data-filter="product1">
                 종류1
-                <span class="category__count">
-                    3
-                </span>
             </button>
             <button class="category__btn" data-filter="product2">
-                종류2
-                <span class="category__count">
-                    3
-                </span>
+                종류2     
             </button>
             <button class="category__btn" data-filter="product3">
                 종류3
-                <span class="category__count">
-                    2
-                </span>
             </button>
         </div>
 
@@ -278,23 +287,26 @@
     <!-- 후기 Review -->
     <section id="Review" class="section">
         <div class="section__container">
-        <h1>사용후기</h1>
+        <h1>사용 가능 지역</h1>
         <h3>모두의 후기</h3>
         <div class="Reviews">
         <!-- 1 -->      
         <div class="Review">
+            <a href=""></a>
             <div class="Review__speech-bubble">
             <p>
-                이거 정말 좋은거 같아요이거 정말 좋은거 같아요이거 정말 좋은거 같아요
-                이거 정말 좋은거 같아요이거 정말 좋은거 같아요이거 정말 좋은거 같아요
-                이거 정말 좋은거 같아요이거 정말 좋은거 같아요이거 정말 좋은거 같아요
-                이거 정말 좋은거 같아요이거 정말 좋은거 같아요이거 정말 좋은거 같아요
+                지도 넣고 싶다지도 넣고 싶다지도 넣고 싶다지도 넣고 싶다지도 넣고 싶다
+                지도 넣고 싶다지도 넣고 싶다지도 넣고 싶다지도 넣고 싶다지도 넣고 싶다
+                지도 넣고 싶다지도 넣고 싶다지도 넣고 싶다지도 넣고 싶다지도 넣고 싶다
+                지도 넣고 싶다지도 넣고 싶다지도 넣고 싶다지도 넣고 싶다지도 넣고 싶다
             </p>
-            <p class="name"><a href="">사용후기</a></p>
+            <p class="name">사용후기</p>
             </div>
+            </a>
         </div>
         <!-- 2 -->      
         <div class="Review">
+            <a href="">
             <div class="Review__speech-bubble">
             <p>
                 이거 정말 좋은거 같아요이거 정말 좋은거 같아요이거 정말 좋은거 같아요
@@ -302,11 +314,13 @@
                 이거 정말 좋은거 같아요이거 정말 좋은거 같아요이거 정말 좋은거 같아요
                 이거 정말 좋은거 같아요이거 정말 좋은거 같아요이거 정말 좋은거 같아요
             </p>
-            <p class="name"><a href="">사용후기</a></p>
+            <p class="name">사용후기</p>
             </div>
+        </a>
         </div>
         <!-- 3 -->      
         <div class="Review">
+            <a href="">
             <div class="Review__speech-bubble">
             <p>
                 이거 정말 좋은거 같아요이거 정말 좋은거 같아요이거 정말 좋은거 같아요
@@ -314,8 +328,9 @@
                 이거 정말 좋은거 같아요이거 정말 좋은거 같아요이거 정말 좋은거 같아요
                 이거 정말 좋은거 같아요이거 정말 좋은거 같아요이거 정말 좋은거 같아요
             </p>
-            <p class="name"><a href="">사용후기</a></p>
+            <p class="name">사용후기</p>
             </div>
+            </a>
         </div>
         
 
@@ -326,7 +341,7 @@
 
     <!-- 문의? Contact -->
     <section id="contact" class="section">
-        <h1 class="contact__title">문의</h1>
+        <h1 class="contact__title">SWING</h1>
         <h2 class="contact__email">이메일</h2>
         <h2 class="contact__email">링크</h2>
         <p class="contact__rights">2020 Project - All rights reserved</p>

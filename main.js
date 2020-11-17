@@ -1,12 +1,13 @@
 'use strict';
 
 const navbar = document.querySelector('#navbar');
-const navbarHeight = navbar.getBoundingClientRect().height;
+const about = document.querySelector('#about');
+const navbarHeight = about.getBoundingClientRect().height;
 document.addEventListener('scroll', () => {
     if(window.scrollY > navbarHeight) {
-        navbar.classList.add('navbar--dark')
+        navbar.classList.add('navbar--fixed')
     } else{
-        navbar.classList.remove('navbar--dark')
+        navbar.classList.remove('navbar--fixed')
     }
 });
 
