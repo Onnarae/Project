@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWING</title>
+    <link rel="icon" type="image/png" href="imgs/logo.jpg"/>
+    <script src="https://kit.fontawesome.com/47f9d77be1.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Project/css/notice.css"/>
+    <script src="/project/js/main.js" defer></script>
+</head>
+<body>
+    <!-- 네비게이션 바 -->
+    <nav id="navbar">
+        <a href="index.html">
+            <img src="/Project/imgs/main_logo.jpeg"  class="navbar__logo"></img>
+        </a>
+            <ul class="navbar__menu">
+                <a href=""><li class="navbar__menu__item active" >공지사항</li></a>
+                <li class="navbar__menu__item" >뉴스</li>
+                <li class="navbar__menu__item" >문의사항</li>
+                <li class="navbar__menu__item" >제품들</li>
+                <li class="navbar__menu__item" >사용후기</li>
+                <li class="navbar__menu__item" >QnA</li>
+                <li class="navbar__menu__item" >Login</li>
+            </ul>
+
+            <!-- Toggle buttton -->
+        <button class="navbar__toggle-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+        <section class="notice_main">
+            <h2>공지사항</h2>
+                <p>공지사항 입니다.</p>
+                    <table border="0">
+                    <colgroup>
+						<col width="70px">
+						<col width="*">
+						<col width="84px">
+						<col width="80px">
+						<col width="55px">
+					</colgroup>
+                    <thead class="notice_head">
+                    <tr>
+                        <td>NO</td>
+                        <td>TITLE</td>
+                        <td>POSTED BY</td>
+                        <td>DATE</td>
+                        <td>VIEW</td>
+                    </tr>
+                    </thead>
+                    <tr class="notice_list_item">
+                        <td class="notice_no">공지</td>
+                        <td class="notice_title_fix">[필독] 교환 및 반품 안내</td>
+                        <td class="notice_name">관리자</td>
+                        <td class="notice_date">2020-20-20</td>
+                        <td class="notice_hit">0</td>
+                    </tr>
+
+                    <tr class="notice_list_item">
+                        <td class="notice_no">공지</td>
+                        <td class="notice_title_fix">[필독] 결제 수단 안내</td>
+                        <td class="notice_name">관리자</td>
+                        <td class="notice_date">2020-20-20</td>
+                        <td class="notice_hit">0</td>
+                    </tr>
+
+                    <tr class="notice_list_item">
+                        <td class="notice_no">01</td>
+                        <td class="notice_title">제목</td>
+                        <td class="notice_name">관리자</td>
+                        <td class="notice_date">2020-20-20</td>
+                        <td class="notice_hit">0</td>
+                    </tr>
+                    <tr class="notice_list_item">
+                        <td class="notice_no">02</td>
+                        <td class="notice_title">제목</td>
+                        <td class="notice_name">관리자</td>
+                        <td class="notice_date">2020-20-20</td>
+                        <td class="notice_hit">0</td>
+                    </tr>
+                    <tr class="notice_list_item">
+                        <td class="notice_no">03</td>
+                        <td class="notice_title">제목</td>
+                        <td class="notice_name">관리자</td>
+                        <td class="notice_date">2020-20-20</td>
+                        <td class="notice_hit">0</td>
+                    </tr>
+                    </table>
+                <div class="notice_page_div">
+                    <a><img src="/Project/imgs/left_button.gif"></a>
+                        <ul class="notice_page">
+                            <li><a href=""class="this_page">1</a></li>
+                            <li><a href=""class="">2</a></li>
+                        </ul>
+                    <a><img src="/Project/imgs/right_button.gif"></a>
+                </div>
+
+                <div>
+                    <select name="" id="search">
+                    <option value="">전체</option>
+                    <option value="">제목</option>
+                    <option value="">이름</option>
+                    <option value="">날짜</option>
+                    </select>
+                    <input type="text">
+                    <button class="search_btn">SEARCH</button>
+                </div>
+                
+        </section>
+
+        <!-- 문의? Contact -->
+    <section id="contact" class="footer">
+        <h1 class="contact__title">SWING</h1>
+        <h2 class="contact__email">이메일</h2>
+        <h2 class="contact__email">링크</h2>
+        <p class="contact__rights">2020 Project - All rights reserved</p>
+    </section>
+    
+</body>
+</html>
