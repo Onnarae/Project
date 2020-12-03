@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWING</title>
+    <link rel="icon" type="image/png" href="imgs/logo.jpg"/>
+    <script src="https://kit.fontawesome.com/47f9d77be1.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Project/css/notice.css"/>
+    <script src="/project/js/main.js" defer></script>
+
+</head>
+<body>
+    <!-- 네비게이션 바 -->
+    <nav id="navbar">
+        <a href="/Project/index.html">
+            <img src="/Project/imgs/main_logo.jpeg"  class="navbar__logo"></img>
+        </a>
+            <ul class="navbar__menu">
+                <a href="/Project/notice/notice.html"><li class="navbar__menu__item active" >공지사항</li></a>
+                <a href="/Project/qna/qna.html"><li class="navbar__menu__item" >QNA</li></a>
+                <a href="/Project/faq/faq.html"><li class="navbar__menu__item" >FAQ</li></a>
+                <a href="/Project/product/product.html"><li class="navbar__menu__item" >제품들</li></a>
+                <a href="/Project/review/review.html"><li class="navbar__menu__item" >사용후기</li></a>
+                <a href="/Project/login/login.html"><li class="navbar__menu__item" >Login</li></a>
+            </ul>
+
+        <!-- Toggle buttton -->
+        <button class="navbar__toggle-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+        
+    </nav>
+
+        <section class="notice_main">
+            <h2>공지사항</h2>
+                <p>공지사항 입니다.</p>
+                    <table border="0">
+                    <colgroup>
+						<col width="100px">
+						<col width="*">
+						<col width="84px">
+						<col width="80px">
+						<col width="55px">
+					</colgroup>
+                    <thead class="notice_head_view">
+                    <tr>
+                        <td>제목</td>
+                        <td colspan="4">TITLE</td>
+                    </tr>
+                    <tr class="notice_head_view">
+                        <td class="">작성자</td>
+                        <td class="" colspan="4">관리자</td>
+                    </tr>
+                    </thead>
+                    <tr class="notice_textarea">
+                        <td class="" colspan="5">
+                        <textarea readonly>
+                        내용입니다.
+
+
+
+
+                        이러면 띄어지나요
+
+
+
+
+                        엄청나!
+
+                        </textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="/Project/notice/notice.html"><img src="/Project/imgs/btn_list.gif" alt=""></a></td>
+                    </tr>
+                    </table>
+
+                    <div class="movement_bar">
+                        <ul>
+                            <li class="prev">
+                            <strong>이전글</strong>
+                            <a href="">이전글~</a>
+                            </li>
+                            <li class="next">
+                            <strong>다음글</strong>
+                            <a href="">다음글~</a>
+                            </li>
+                        </ul>
+                    </div>
+                
+        </section>
+
+        <!-- 문의? Contact -->
+    <section id="contact" class="footer">
+        <h1 class="contact__title">SWING</h1>
+        <h2 class="contact__email">이메일</h2>
+        <h2 class="contact__email">링크</h2>
+        <p class="contact__rights">2020 Project - All rights reserved</p>
+    </section>
+    
+</body>
+</html>

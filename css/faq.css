@@ -42,7 +42,6 @@
  body{
      font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
      margin: 0;
-     min-width: 1280px;
  }
 
  a{
@@ -53,7 +52,6 @@
  ul{
      list-style: none;
      padding: 0;
-     margin: 0;
  }
   
  button{
@@ -109,7 +107,6 @@
     padding: 8px 16px;
     transition: all var(--animation-duration);
     background-color: var(--color-white);
-    min-width: 1280px;
 }
 #navbar:hover{
   box-shadow: 0 1px 3px 0 rgba(0,0,0,0.50);
@@ -161,19 +158,19 @@
 }
 
 /* 공지사항*/
-.notice_main{
+.faq_main{
     padding: 40px;
     padding-top: 130px;
     text-align: center;
     border-bottom: 1px solid #eaeaea;
 }
 
-.notice_main p{
+.faq_main p{
     padding-bottom: 15px;
     
 }
 
-.notice_head{
+.faq_head{
     
     font-size: 11px;
     font-weight: normal;
@@ -184,119 +181,50 @@
     color: #353535;
 }
 
-.notice_head_view{
-    text-align: left;
-    font-size: 11px;
-    font-weight: normal;
-    vertical-align: middle;
-    letter-spacing: 1px;
-    border-top: 1px solid #dfdfdf;
-    border-bottom: 1px solid #dfdfdf;
-    color: #353535;
-}
-
-.notice_head_view td{
+.faq_head td{
     padding: 11px 0 10px;
 }
 
-.notice_head td{
-    padding: 11px 0 10px;
-}
-
-.notice_list_item{
+.faq_list_item{
     font-size: 13px;
     border-bottom: 1px solid #dfdfdf;
 }
 
-.notice_list_item td{
+.faq_list_item td{
     padding: 24px 0 26px 10px;
 }
 
-.notice_list_item .notice_title{
+.faq_list_item .faq_title{
     text-align: left;
 }
 
-.notice_list_item .notice_date{
+.faq_list_item .faq_date{
     font-size: 11px;
 }
 
-.notice_list_item .notice_title_fix{
+.faq_list_item .notice_title_fix{
     text-align: left;
     font-weight: bold;
 }
 
-.notice_textarea textarea{
-    width: 100%;
-    min-height: 500px;
-    border-bottom: 1px solid #dfdfdf;
-    border: 0;
-    outline: none;
-    resize: none;
-    overflow-y: hidden;
-    line-height: 150%;
-}
-
-.movement_bar{
-    border: 1px solid #d7d5d5;
-    margin: 20px 0;
-    height: 87px;
-}
-
-.movement_bar li strong, .movement_bar li a{
-    float: left;
-    padding: 10px;
-}
-
-.movement_bar li{
-    overflow: hidden;
-    padding: 0 20px;
-    border-bottom: 1px solid #e9e9e9;
-    line-height: 140%;
-    color: #353535;
-}
-
-.movement_bar li a{
-
-    border-left: 1px solid #e9e9e9;
-}
-
-.movement_bar strong{
-    width: 6%;
-    padding-left: 15px;
-    font-weight: normal;
-}
-
-.movement_bar li.prev strong{
-    background: url(/Project/imgs/ico_move_prev.gif)
-    no-repeat 0 18px;
-    
-}
-
-.movement_bar li.next strong{
-    background: url(/Project/imgs/ico_move_next.gif)
-    no-repeat 0 18px;
-}
-
-
-
 /* 페이지 */
-.notice_page{
+.faq_page{
     display: flex;
     justify-content: center;
 }
 
-.notice_page li{
+.faq_page li{
     font-size: 12px;
 }
 
-.notice_page li a.this_page{
+.faq_page li a.this_page{
     padding-bottom: 6px;
     font-weight: 700;
     border-bottom: 3px solid #222;
     color: #000;
 }
 
-.notice_page li a{
+.faq_page li a{
     border: 1px solid #d7d5d5;
     padding: 9px 0;
     display: block;
@@ -306,14 +234,15 @@
     color: #939393;
 }
 
-.notice_page_div{
+.faq_page_div{
     display: flex;
     justify-content: center;
     margin: 30px;
 }
 
 
-.notice_page_div img{
+.faq_page_div img{
+    margin-top: 16px;
     vertical-align: top;
 }
 
@@ -368,19 +297,6 @@ input[type="text"]{
     border: 1px solid #d5d5d5;
     color: #111111;
     font-size: 12px;
-}
-
-.list_btn{
-    padding: 7px 23px 6px;
-    font-size: 11px;
-    margin: 2px 3px;
-    letter-spacing: 1px;
-    display: inline-block;
-    background: #fff;
-    border: 1px solid #d5d5d5;
-    text-align: center;
-    height: 28px;
-    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.50);
 }
 
 .search_btn{
