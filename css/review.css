@@ -42,6 +42,7 @@
  body{
      font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
      margin: 0;
+     min-width: 1280px;
  }
 
  a{
@@ -52,6 +53,7 @@
  ul{
      list-style: none;
      padding: 0;
+     margin: 0;
  }
   
  button{
@@ -107,6 +109,7 @@
     padding: 8px 16px;
     transition: all var(--animation-duration);
     background-color: var(--color-white);
+    min-width: 1280px;
 }
 #navbar:hover{
   box-shadow: 0 1px 3px 0 rgba(0,0,0,0.50);

@@ -8,7 +8,7 @@
     g" href="imgs/logo.jpg"/>
     <script src="https://kit.fontawesome.com/47f9d77be1.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/Project/css/notice.css"/>
+    <link rel="stylesheet" href="/Project/css/login.css"/>
     <script src="/project/js/main.js" defer></script>
     <script type="text/javascript">
 		function loginCheck(){
@@ -34,12 +34,13 @@
 <body>
     <!-- 네비게이션 바 -->
     <nav id="navbar">
-        <a href="index.html">
+        <a href="/Project/index.html">
             <img src="/Project/imgs/main_logo.jpeg"  class="navbar__logo"></img>
         </a>
             <ul class="navbar__menu">
                 <a href="/Project/notice/notice.html"><li class="navbar__menu__item active" >공지사항</li></a>
                 <a href="/Project/qna/qna.html"><li class="navbar__menu__item" >QNA</li></a>
+                <a href="/Project/faq/faq.html"><li class="navbar__menu__item" >FAQ</li></a>
                 <a href="/Project/product/product.html"><li class="navbar__menu__item" >제품들</li></a>
                 <a href="/Project/review/review.html"><li class="navbar__menu__item" >사용후기</li></a>
                 <a href="/Project/login/login.html"><li class="navbar__menu__item" >Login</li></a>
@@ -52,29 +53,34 @@
         
     </nav>
 
-        <section class="notice_main">
+        <section class="login_main">
+		<div class="title_area">
             <h2>로그인</h2>
-                    <form name="login" >
+		</div>
+                    <form name="login" class="login">
 								<fieldset> <!-- 로그인이라는 필드셋의 묶음 -->
-									<div class="float-left">
 										<p>
-										<label class="readonly">아이디</label>
-										<input type="text" name="t_id" autofocus="autofocus" class="txt"  onkeypress="if(event.keyCode==13){go_pw()}" placeholder="아이디를 입력하세요">
+										<label class="id">
+										<span><img src="/Project/imgs/login_icon.jpg" alt="">ID</span>
+										<input type="text"></label>
 										</p>
-										<p>
-										<label class="readonly">비밀번호</label>
-										<input type="password" name="t_pw" class="txt" onkeypress="if(event.keyCode==13) {loginCheck()}" placeholder="비번호를 입력하세요">
-										</p>
-									</div>
-									<div class="float-right">
-										<p>
-										<input type="button" value="로그인" class="submit" onClick="loginCheck()"> 
-										</p> 
-									</div>
-									<p class="btn">
-										<a href="#">ID/PW 찾기</a>
-										<a href="/MemberJoin">회원가입</a>
-									</p>
+										<label class="pw">
+										<span><img src="/Project/imgs/pw_icon.jpg" alt="">PW</span>
+										<input type="password">
+										</label>
+										<ul>
+											<li class="security"><input type="checkbox"><label for="">아이디 저장</label></li>
+											<li><a href="">아이디찾기</a> / </li>
+											<li><a href="">비밀번호찾기</a></li>
+										</ul>
+
+										
+										<a href="" class="login_btn">LOG-IN</a>
+
+										
+
+										<a href="/Project/login/join.html" class="join_btn">JOIN US</a>
+										
 								</fieldset>
 							</form>
         </section>
