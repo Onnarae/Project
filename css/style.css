@@ -154,13 +154,24 @@
 
   /* 메인화면 */
   #home{  
-  background: url("/Project/imgs/main_home.gif") center/cover no-repeat;
+  //background: url("/Project/imgs/main_home.gif") center/cover no-repeat;
   background-attachment: fixed;
-  padding: 40px;
+  padding: 0px;
   padding-top: 100px;
   text-align: center;
   }
 
+  .video_div{
+    position: fixed; 
+    right: 0; 
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;        
+    width: auto; 
+    height: auto; 
+    z-index: -100;
+    background-size: cover;
+  }
 
   .home__avatar{
     width: 250px;
@@ -290,6 +301,9 @@
   
   /* 제품 product */
 
+  #product{
+    background-color: white;
+  }
   
   .product__categories{
     max-width: 1200px;
