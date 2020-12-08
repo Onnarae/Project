@@ -94,7 +94,7 @@
     font-size: var(--font-regular);
     font-weight: var(--weight-regular);
     color: var(--color-black);
-    margin: 4px 0;
+    margin: 4px 0 0 0;
   }
 
 
@@ -170,7 +170,12 @@
 
 .notice_main p{
     padding-bottom: 15px;
-    
+}
+
+.notice_main table{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1280px;
 }
 
 .notice_head{
@@ -398,10 +403,15 @@ input[type="text"]{
 /* 하단 */
 .footer{
     text-align: center;
+    background-color: var(--color-light-grey);
 }
 
+.footer p{
+    font-size: 12px;
+    color: white;
+}
 .footer img{
-    height: 110px;
-    width: 160px;
+    width: 80px;
+    height: 55px;
 }
 

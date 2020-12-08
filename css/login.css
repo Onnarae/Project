@@ -14,14 +14,14 @@
     --color-yellow: #fff7d1;
     --color-orange: #feb546;
     --color-black: #000000;
-  
+
     /* 폰트 사이즈 */
     --font-large: 48px;
     --font-medium: 28px;
     --font-regular: 18px;
     --font-small: 16px;
     --font-micro: 14px;
-  
+
     /* 폰트 굵기 */
     --weight-bold: 700;
     --weight-semi-bold: 600;
@@ -32,40 +32,41 @@
 
     /* 애니메이션 */
     --animation-duration: 300ms;
-  }
-  
-  /* Universal tags */
-  *{
-      box-sizing: border-box;
-  }
+}
 
- body{
+  /* Universal tags */
+*{
+    box-sizing: border-box;
+}
+
+body{
     font: 0.75em 'Open Sans','Nanum Gothic','Malgun Gothic','맑은 고딕',Dotum,'돋움','AppleGothic','Apple SD Gothic Neo',sans-serif;
     margin: 0;
- }
+}
 
- a{
-     text-decoration: none;
-     color: var(--color-black);
- }
+a{
+    text-decoration: none;
+    color: var(--color-black);
+}
 
- ul{
-     list-style: none;
-     padding: 0;
- }
-  
- button{
-   background-color: transparent;
-   cursor: pointer;
-   border: none;
-   outline: none;
- }
- table{
-  width: 100%;
-  border: 0;
-  border-spacing: 0;
-  border-collapse: collapse;
- }
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+button{
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+table{
+    width: 100%;
+    border: 0;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
   /* Typography */
   h1 {
     font-size: var(--font-large);
@@ -243,6 +244,7 @@ img, fieldset{
 }
 
 .login fieldset li{
+    margin-top: 4px;
     float: left;
     padding: 0 0 0 3px;
     color: #999;
@@ -292,14 +294,17 @@ img, fieldset{
     background: #fff;
     border: 1px solid #ddd;
     text-align: center;
+    margin-bottom: 150px;
 }
-
 
 .footer{
     text-align: center;
 }
 
+.footer p{
+    font-size: 12px;
+}
 .footer img{
-    width: 160px;
-    height: 110px;
+    width: 80px;
+    height: 55px;
 }

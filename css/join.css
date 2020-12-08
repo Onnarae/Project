@@ -52,6 +52,7 @@
  ul{
      list-style: none;
      padding: 0;
+     margin: 0;
  }
   
  button{
@@ -171,7 +172,9 @@
 
 .boardForm{
     margin-top: 50px;
-    
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .boardForm tbody{
@@ -244,7 +247,10 @@ select{
     border-top: 1px solid #dfdfdf;
 }
 
+.footer p{
+  font-size: 12px;
+}
 .footer img{
-    width: 160px;
-    height: 110px;
+  width: 80px;
+  height: 55px;
 }
