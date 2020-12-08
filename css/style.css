@@ -210,12 +210,6 @@
     padding: 50px;
     text-align: center;
     min-width: 1400px;
-  // margin: auto;
-  }
-
-  //.section__container{
-    max-width: 1400px;
-    margin: auto;
   }
 
   /* 문의 사항등*/
@@ -259,12 +253,13 @@
     font-weight: 600;
     letter-spacing: 1px;
     text-align: left;
+    background-color:  #EAEAEC;
   }
 
   .news{
     padding: 45px 37px 10px ;
-    width: 420px;
-    height: 350px;
+    width: 430px;
+    height: 380px;
     display: block;
     float: left;
     background: #fff;
@@ -359,7 +354,8 @@
 
   .product__projects {
     max-width: 1200px;
-    margin: 0 25px 0 75px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
