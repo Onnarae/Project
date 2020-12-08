@@ -40,8 +40,8 @@
   }
 
  body{
-     font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-     margin: 0;
+    font: 0.75em 'Open Sans','Nanum Gothic','Malgun Gothic','맑은 고딕',Dotum,'돋움','AppleGothic','Apple SD Gothic Neo',sans-serif;
+    margin: 0;
  }
 
  a{

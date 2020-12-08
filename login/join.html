@@ -120,36 +120,39 @@
 				<h3>기본정보</h3>
 			<table class="boardForm">
 			  <colgroup>
-				<col width="200" />
-				<col width="500" />
+				<col width="150px" />
+				<col width="auto" />
 			  </colgroup>
 			  <tbody>
 				<tr>
 				  <th><label for="id">I D</label></th>
 				  <td>
-					<input name="t_id" type="text" size="10" id="id" title="id입력하세요">
+					<input name="t_id" type="text" size="16" id="id" title="id입력하세요">
 					
 				  	<input type="hidden" name="id_check_gubun">
 
-					<input type="button" id="idCheck" value="ID중복검사" class="checkB">
+					<!--<input type="button" id="idCheck" value="ID중복검사" class="checkB">-->
+					(영문소문자/숫자, 4~16자)
 					<span class="id_check_span"></span>
 				  </td>
 				</tr>
 				<tr>
-				  <th><label for="nana">성 명</label></th>
-				  <td><input name="t_name" type="text" size="8" id="nana"></td>
-				</tr>
-				
-				<tr>
 				  <th>비밀번호</th>
-				  <td><input  name="t_pw" type="password" size="13"></td>
+				  <td>
+				  <input  name="t_pw" type="password" size="16">
+				  (영문 대소문자/숫자/특수문자 중 2가지 이상 조합, 8~16자)
+				  </td>
 				</tr>
 				
 				<tr>
 				  <th>비밀번호확인</th>
-				  <td><input  name="t_pw_confirm" type="password" size="13"></td>
+				  <td><input  name="t_pw_confirm" type="password" size="16"></td>
 				</tr>
 				<tr>
+				<tr>
+				  <th><label for="nana">성 명</label></th>
+				  <td><input name="t_name" type="text" size="16" id="nana"></td>
+				</tr>
 				
 				<tr>
 				  <th>주소</th>
@@ -159,24 +162,17 @@
 				<tr>
 				  <th>연락처</th>
 				  <td>
-					<input name="t_tel_1" type="text" size="2"> -
-					<input name="t_tel_2" type="text" size="3"> -
-					<input name="t_tel_3" type="text" size="3">
+					<input id="tel_1" name="t_tel_1" type="text" maxlength="3"> -
+					<input id="tel_2" name="t_tel_2" type="text" maxlength="4"> -
+					<input id="tel_3" name="t_tel_3" type="text" maxlength="4">
 				  </td>
 				</tr>
 				
 				<tr>
-				  <th>남여구분</th>
-				  <td>
-					  <input type="radio" value="m" checked name="t_mf" class="middleCheck" /> 남&nbsp;&nbsp;        
-					  <input type="radio" value="f" name="t_mf" class="middleCheck" /> 여
-				  </td>
-				</tr>
-				
 				<tr>
 				  <th>이메일</th>
 				  <td>
-				  <input  name="t_email1" type="text" size="12">
+				  <input  name="t_email1" type="text" size="16">
 				  <span>@</span>
 				   <input id="textEmail" placeholder="이메일을 선택하세요."> 
 				  <select id="select" name="t_email2">
@@ -191,6 +187,7 @@
 				
 			  </tbody>
 			</table>
+			<a href="/Project/index.html" class="join_btn">회원가입</a>
 			</form>
         </section>
 

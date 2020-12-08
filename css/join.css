@@ -40,8 +40,8 @@
   }
 
  body{
-     font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-     margin: 0;
+  font: 0.75em 'Open Sans','Nanum Gothic','Malgun Gothic','맑은 고딕',Dotum,'돋움','AppleGothic','Apple SD Gothic Neo',sans-serif;
+  margin: 0;
  }
 
  a{
@@ -106,9 +106,7 @@
       padding: 8px 16px;
       transition: all var(--animation-duration);
       background-color: var(--color-white);
-  }
-  #navbar:hover{
-    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.50);
+      box-shadow: 0 1px 3px 0 rgba(0,0,0,0.50);
   }
   #navbar.navbar--fixed{
     position: fixed;
@@ -166,17 +164,84 @@
 }
 
 .join_main h3{
-    padding: 50px 0 10px;
+    padding: 20px 0 10px;
     font-size: 16px;
     color: #2e2e2e;
 }
 
 .boardForm{
-    margin-top: 100px;
+    margin-top: 50px;
+    
+}
+
+.boardForm tbody{
+  border: 1px solid #e1e1e1;
+}
+
+.boardForm tbody input{
+  margin: 0 4px 0 0;
+}
+
+.boardForm tbody th{
+  padding: 17px 10px 16px 18px;
+  width: 180px;
+  border-right: 1px solid #e1e1e1;
+  background: #fff;
+  border-top: 1px solid #dfdfdf;
+    border-bottom-width: 0;
+    color: #353535;
+    text-align: left;
+    font-weight: normal;
+}
+
+.boardForm tbody td{
+  padding: 17px 0 16px 28px;
+  background: #fff;
+  border-top: 1px solid #dfdfdf;
+  color: #353535;
+  vertical-align: middle;
+  text-align: left;
+}
+
+input{
+  height: 22px;
+    line-height: 24px;
+    padding: 2px 4px;
+    border: 1px solid #d5d5d5;
+    color: #111111;
+    font-size: 12px;
+}
+
+select{
+  outline: none;
+  font-size: 100%;
+  font-family: 'Open Sans','Nanum Gothic',Verdana,Dotum,sans-serif;
+  color: #111111;
+  vertical-align: middle;
+  height: 22px;
+    border: 1px solid #d5d5d5;
+}
+
+#tel_1, #tel_2, #tel_3{
+  width: 50px;
+  margin: 0 4px
+}
+
+.join_btn{
+  padding: 18px 63px;
+  font-size: 13px;
+  font-weight: 700;
+  margin: 50px 0 0;
+  color: #fff;
+  display: inline-block;
+  background: #222;
+  border: 1px solid #222;
+  text-align: center;
 }
 
 .footer{
     text-align: center;
+    border-top: 1px solid #dfdfdf;
 }
 
 .footer img{
