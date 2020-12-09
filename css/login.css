@@ -142,10 +142,6 @@ table{
 }
 
 
-.navbar__menu__item:hover {
-    border-color: var(--color-white);
-    border-radius: var(--size-border-radius);
-}
 
 .navbar__toggle-btn {
   color: var(--color-black);

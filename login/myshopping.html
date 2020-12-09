@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWING</title>
+    <link rel="icon" type="image/png" href="imgs/logo.jpg"/>
+    <script src="https://kit.fontawesome.com/47f9d77be1.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Project/css/notice.css"/>
+    <script src="/project/js/main.js" defer></script>
+    <script src="/project/js/jquery-3.5.1.js"></script>
+    <script type="text/javascript">
+    function test1(){
+    	if($('#h1').css('display')=='none'){
+    	    $('#h1').show();
+    		$('#h2').hide();
+    		$('#h3').hide();
+    		$('#h4').hide();
+    		$('#h5').hide();
+    	}
+    }
+    function test2(){
+    	if($('#h2').css('display')=='none'){
+    		$('#h1').hide();
+    		$('#h2').show();
+    		$('#h3').hide();
+    		$('#h4').hide();
+    		$('#h5').hide();
+    	}
+    }
+    function test3(){
+    	if($('#h3').css('display')=='none'){
+    		$('#h1').hide();
+    		$('#h2').hide();
+    		$('#h3').show();
+    		$('#h4').hide();
+    		$('#h5').hide();
+    	}
+    }
+    function test4(){
+    	if($('#h4').css('display')=='none'){
+    		$('#h1').hide();
+    		$('#h2').hide();
+    		$('#h3').hide();
+    		$('#h4').show();
+    		$('#h5').hide();
+    	}
+    }
+    function test5(){
+    	if($('#h5').css('display')=='none'){
+    		$('#h1').hide();
+    		$('#h2').hide();
+    		$('#h3').hide();
+    		$('#h4').hide();
+    		$('#h5').show();
+    	}
+    }
+	</script>
+</head>
+<body>
+    <!-- 네비게이션 바 -->
+    <nav id="navbar">
+        <a href="/Project/index.html">
+            <img src="/Project/imgs/main_logo.jpeg"  class="navbar__logo"></img>
+        </a>
+            <ul class="navbar__menu">
+                <a href="/Project/notice/notice.html"><li class="navbar__menu__item active" >공지사항</li></a>
+                <a href="/Project/qna/qna.html"><li class="navbar__menu__item" >QNA</li></a>
+                <a href="/Project/product/product.html"><li class="navbar__menu__item" >제품들</li></a>
+                <a href="/Project/review/review.html"><li class="navbar__menu__item" >사용후기</li></a>
+                <a href="/Project/login/login.html"><li class="navbar__menu__item" >Login</li></a>
+            </ul>
+
+        <!-- Toggle buttton -->
+        <button class="navbar__toggle-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+        
+    </nav>
+
+        <section class="notice_main">
+            <h2>마이쇼핑</h2>
+            <table border="1">
+            	<tr>
+            		<td>
+            			<h6>가용적립금 0원<input type="button" value="조회"></h6>
+            			<h6>사용적립금 0원</h6>
+            			<h6>쿠폰 : 0개 <input type="button" value="조회"></h6>
+            		</td>
+            		<td>
+            			<h6>총적립금 0원</h6>
+            			<h6>총적립금 0원(0회)</h6>
+            		</td>
+            	</tr>
+            </table>
+            <table border="1">
+            	<tr>
+            		<td>나의 주문처리 현황</td>
+            	</tr>
+            	<tr>
+            		<td>
+            			<h6>입금전</h6>
+            			<h2>0</h2>
+            		</td>
+            		<td>
+            			<h6>배송준비중</h6>
+            			<h2>0</h2>
+            		</td>
+            		<td>
+            			<h6>배송중</h6>
+            			<h2>0</h2>
+            		</td>
+            		<td>
+            			<h6>배송완료</h6>
+            			<h2>0</h2>
+            		</td>
+            		<td>
+            			<h6>취소 : 0</h6>
+            			<h6>교환 : 0</h6>
+            			<h6>반품 : 0</h6>
+            		</td>
+            	</tr>
+            	<tr>
+            		<td style="cursor:pointer;color:#gray;" onclick="test1()">
+            			<h4>ORDER</h4>
+            			<h5>주문내역 조회</h5>
+            		</td>
+            		<td style="cursor:pointer;color:#gray;" onclick="">
+            			<h4>PROFILE</h4>
+            			<h5>회원정보</h5>
+            		</td>
+            		<td style="cursor:pointer;color:#gray;" onclick="test2()">
+            			<h4>MILEAGE</h4>
+            			<h5>적립금</h5>
+            		</td>
+            		<td style="cursor:pointer;color:#gray;" onclick="test3()">
+            			<h4>COUPON</h4>
+            			<h5>쿠폰</h5>
+            		</td>
+            		<td style="cursor:pointer;color:#gray;" onclick="test4()">
+            			<h4>BOARD</h4>
+            			<h5>게시물 관리</h5>
+            		</td>
+            		<td style="cursor:pointer;color:#gray;" onclick="test5()">
+            			<h4>ADDRESS</h4>
+            			<h5>배송 주소록 관리</h5>
+            		</td>
+            	</tr>
+            </table>
+            <div id = "h1" style="display:none;">
+            <h2>주문</h2>
+				<table border="0">
+                    <colgroup>
+						<col width="70px">
+						<col width="*">
+						<col width="84px">
+						<col width="80px">
+						<col width="55px">
+					</colgroup>
+                    <thead class="notice_head">
+                    <tr>
+                        <td>NO</td>
+                        <td>TITLE</td>
+                        <td>POSTED BY</td>
+                        <td>DATE</td>
+                        <td>VIEW</td>
+                    </tr>
+                    </thead>
+                    <tr class="notice_list_item">
+                        <td class="notice_no">공지</td>
+                        <td class="notice_title_fix">[필독] 교환 및 반품 안내</td>
+                        <td class="notice_name">관리자</td>
+                        <td class="notice_date">2020-20-20</td>
+                        <td class="notice_hit">0</td>
+                    </tr>
+
+                    <tr class="notice_list_item">
+                        <td class="notice_no">공지</td>
+                        <td class="notice_title_fix">[필독] 결제 수단 안내</td>
+                        <td class="notice_name">관리자</td>
+                        <td class="notice_date">2020-20-20</td>
+                        <td class="notice_hit">0</td>
+                    </tr>
+
+                    <tr class="notice_list_item">
+                        <td class="notice_no">01</td>
+                        <td class="notice_title">제목</td>
+                        <td class="notice_name">관리자</td>
+                        <td class="notice_date">2020-20-20</td>
+                        <td class="notice_hit">0</td>
+                    </tr>
+                    <tr class="notice_list_item">
+                        <td class="notice_no">02</td>
+                        <td class="notice_title">제목</td>
+                        <td class="notice_name">관리자</td>
+                        <td class="notice_date">2020-20-20</td>
+                        <td class="notice_hit">0</td>
+                    </tr>
+                    <tr class="notice_list_item">
+                        <td class="notice_no">03</td>
+                        <td class="notice_title">제목</td>
+                        <td class="notice_name">관리자</td>
+                        <td class="notice_date">2020-20-20</td>
+                        <td class="notice_hit">0</td>
+                    </tr>
+                    </table>
+                <div class="notice_page_div">
+                    <a><img src="/Project/imgs/left_button.gif"></a>
+                        <ul class="notice_page">
+                            <li><a href=""class="this_page">1</a></li>
+                            <li><a href=""class="">2</a></li>
+                        </ul>
+                    <a><img src="/Project/imgs/right_button.gif"></a>
+                </div>
+
+                <div>
+                    <select name="" id="search">
+                    <option value="">전체</option>
+                    <option value="">제목</option>
+                    <option value="">이름</option>
+                    <option value="">날짜</option>
+                    </select>
+                    <input type="text">
+                    <button class="search_btn">SEARCH</button>
+                </div>
+			</div>
+			<!-- 주문 끝 -->
+            <div id = "h2" style="display:none;">
+            <h2>마일리지</h2>
+				<table border="0">
+                    <colgroup>
+						<col width="70px">
+						<col width="*">
+						<col width="84px">
+						<col width="80px">
+						<col width="55px">
+					</colgroup>
+                    <thead class="notice_head">
+                    <tr>
+                        <td>NO</td>
+                        <td>TITLE</td>
+                        <td>POSTED BY</td>
+                        <td>DATE</td>
+                        <td>VIEW</td>
+                    </tr>
+                    </thead>
+                    <tr class="notice_list_item">
+                        <td class="notice_no">공지</td>
+                        <td class="notice_title_fix">[필독] 교환 및 반품 안내</td>
+                        <td class="notice_name">관리자</td>
+                        <td class="notice_date">2020-20-20</td>
+                        <td class="notice_hit">0</td>
+                    </tr>
+
+                    <tr class="notice_list_item">
+                        <td class="notice_no">공지</td>
+                        <td class="notice_title_fix">[필독] 결제 수단 안내</td>
+                        <td class="notice_name">관리자</td>
+                        <td class="notice_date">2020-20-20</td>
+                        <td class="notice_hit">0</td>
+                    </tr>
+
+                    <tr class="notice_list_item">
+                        <td class="notice_no">01</td>
+                        <td class="notice_title">제목</td>
+                        <td class="notice_name">관리자</td>
+                        <td class="notice_date">2020-20-20</td>
+                        <td class="notice_hit">0</td>
+                    </tr>
+                    <tr class="notice_list_item">
+                        <td class="notice_no">02</td>
+                        <td class="notice_title">제목</td>
+                        <td class="notice_name">관리자</td>
+                        <td class="notice_date">2020-20-20</td>
+                        <td class="notice_hit">0</td>
+                    </tr>
+                    <tr class="notice_list_item">
+                        <td class="notice_no">03</td>
+                        <td class="notice_title">제목</td>
+                        <td class="notice_name">관리자</td>
+                        <td class="notice_date">2020-20-20</td>
+                        <td class="notice_hit">0</td>
+                    </tr>
+                    </table>
+                <div class="notice_page_div">
+                    <a><img src="/Project/imgs/left_button.gif"></a>
+                        <ul class="notice_page">
+                            <li><a href=""class="this_page">1</a></li>
+                            <li><a href=""class="">2</a></li>
+                        </ul>
+                    <a><img src="/Project/imgs/right_button.gif"></a>
+                </div>
+
+                <div>
+                    <select name="" id="search">
+                    <option value="">전체</option>
+                    <option value="">제목</option>
+                    <option value="">이름</option>
+                    <option value="">날짜</option>
+                    </select>
+                    <input type="text">
+                    <button class="search_btn">SEARCH</button>
+                </div>
+			</div>
+			<!-- 마일리지끝 -->
+            <div id = "h3" style="display:none;">
+            <h2>쿠폰</h2>
+				<table border="0">
+                    <colgroup>
+						<col width="70px">
+						<col width="*">
+						<col width="84px">
+						<col width="80px">
+						<col width="55px">
+					</colgroup>
+                    <thead class="notice_head">
+                    <tr>
+                        <td>NO</td>
+                        <td>TITLE</td>
+                        <td>POSTED BY</td>
+                        <td>DATE</td>
+                        <td>VIEW</td>
+                    </tr>
+                    </thead>
+                    <tr class="notice_list_item">
+                        <td class="notice_no">공지</td>
+                        <td class="notice_title_fix">[필독] 교환 및 반품 안내</td>
+                        <td class="notice_name">관리자</td>
+                        <td class="notice_date">2020-20-20</td>
+                        <td class="notice_hit">0</td>
+                    </tr>
+
+                    <tr class="notice_list_item">
+                        <td class="notice_no">공지</td>
+                        <td class="notice_title_fix">[필독] 결제 수단 안내</td>
+                        <td class="notice_name">관리자</td>
+                        <td class="notice_date">2020-20-20</td>
+                        <td class="notice_hit">0</td>
+                    </tr>
+
+                    <tr class="notice_list_item">
+                        <td class="notice_no">01</td>
+                        <td class="notice_title">제목</td>
+                        <td class="notice_name">관리자</td>
+                        <td class="notice_date">2020-20-20</td>
+                        <td class="notice_hit">0</td>
+                    </tr>
+                    <tr class="notice_list_item">
+                        <td class="notice_no">02</td>
+                        <td class="notice_title">제목</td>
+                        <td class="notice_name">관리자</td>
+                        <td class="notice_date">2020-20-20</td>
+                        <td class="notice_hit">0</td>
+                    </tr>
+                    <tr class="notice_list_item">
+                        <td class="notice_no">03</td>
+                        <td class="notice_title">제목</td>
+                        <td class="notice_name">관리자</td>
+                        <td class="notice_date">2020-20-20</td>
+                        <td class="notice_hit">0</td>
+                    </tr>
+                    </table>
+                <div class="notice_page_div">
+                    <a><img src="/Project/imgs/left_button.gif"></a>
+                        <ul class="notice_page">
+                            <li><a href=""class="this_page">1</a></li>
+                            <li><a href=""class="">2</a></li>
+                        </ul>
+                    <a><img src="/Project/imgs/right_button.gif"></a>
+                </div>
+
+                <div>
+                    <select name="" id="search">
+                    <option value="">전체</option>
+                    <option value="">제목</option>
+                    <option value="">이름</option>
+                    <option value="">날짜</option>
+                    </select>
+                    <input type="text">
+                    <button class="search_btn">SEARCH</button>
+                </div>
+			</div>
+			<!-- 쿠폰 끝 -->
+            <div id = "h4" style="display:none;">
+            <h2>게시물</h2>
+				<table border="0">
+                    <colgroup>
+						<col width="70px">
+						<col width="*">
+						<col width="84px">
+						<col width="80px">
+						<col width="55px">
+					</colgroup>
+                    <thead class="notice_head">
+                    <tr>
+                        <td>NO</td>
+                        <td>TITLE</td>
+                        <td>POSTED BY</td>
+                        <td>DATE</td>
+                        <td>VIEW</td>
+                    </tr>
+                    </thead>
+                    <tr class="notice_list_item">
+                        <td class="notice_no">공지</td>
+                        <td class="notice_title_fix">[필독] 교환 및 반품 안내</td>
+                        <td class="notice_name">관리자</td>
+                        <td class="notice_date">2020-20-20</td>
+                        <td class="notice_hit">0</td>
+                    </tr>
+
+                    <tr class="notice_list_item">
+                        <td class="notice_no">공지</td>
+                        <td class="notice_title_fix">[필독] 결제 수단 안내</td>
+                        <td class="notice_name">관리자</td>
+                        <td class="notice_date">2020-20-20</td>
+                        <td class="notice_hit">0</td>
+                    </tr>
+
+                    <tr class="notice_list_item">
+                        <td class="notice_no">01</td>
+                        <td class="notice_title">제목</td>
+                        <td class="notice_name">관리자</td>
+                        <td class="notice_date">2020-20-20</td>
+                        <td class="notice_hit">0</td>
+                    </tr>
+                    <tr class="notice_list_item">
+                        <td class="notice_no">02</td>
+                        <td class="notice_title">제목</td>
+                        <td class="notice_name">관리자</td>
+                        <td class="notice_date">2020-20-20</td>
+                        <td class="notice_hit">0</td>
+                    </tr>
+                    <tr class="notice_list_item">
+                        <td class="notice_no">03</td>
+                        <td class="notice_title">제목</td>
+                        <td class="notice_name">관리자</td>
+                        <td class="notice_date">2020-20-20</td>
+                        <td class="notice_hit">0</td>
+                    </tr>
+                    </table>
+                <div class="notice_page_div">
+                    <a><img src="/Project/imgs/left_button.gif"></a>
+                        <ul class="notice_page">
+                            <li><a href=""class="this_page">1</a></li>
+                            <li><a href=""class="">2</a></li>
+                        </ul>
+                    <a><img src="/Project/imgs/right_button.gif"></a>
+                </div>
+
+                <div>
+                    <select name="" id="search">
+                    <option value="">전체</option>
+                    <option value="">제목</option>
+                    <option value="">이름</option>
+                    <option value="">날짜</option>
+                    </select>
+                    <input type="text">
+                    <button class="search_btn">SEARCH</button>
+                </div>
+			</div>
+			<!-- 게시판 끝 -->
+            <div id = "h5" style="display:none;">
+            <h2>배송 주소록</h2>
+				<table border="0">
+                    <colgroup>
+						<col width="70px">
+						<col width="*">
+						<col width="84px">
+						<col width="80px">
+						<col width="55px">
+					</colgroup>
+                    <thead class="notice_head">
+                    <tr>
+                        <td>NO</td>
+                        <td>TITLE</td>
+                        <td>POSTED BY</td>
+                        <td>DATE</td>
+                        <td>VIEW</td>
+                    </tr>
+                    </thead>
+                    <tr class="notice_list_item">
+                        <td class="notice_no">공지</td>
+                        <td class="notice_title_fix">[필독] 교환 및 반품 안내</td>
+                        <td class="notice_name">관리자</td>
+                        <td class="notice_date">2020-20-20</td>
+                        <td class="notice_hit">0</td>
+                    </tr>
+
+                    <tr class="notice_list_item">
+                        <td class="notice_no">공지</td>
+                        <td class="notice_title_fix">[필독] 결제 수단 안내</td>
+                        <td class="notice_name">관리자</td>
+                        <td class="notice_date">2020-20-20</td>
+                        <td class="notice_hit">0</td>
+                    </tr>
+
+                    <tr class="notice_list_item">
+                        <td class="notice_no">01</td>
+                        <td class="notice_title">제목</td>
+                        <td class="notice_name">관리자</td>
+                        <td class="notice_date">2020-20-20</td>
+                        <td class="notice_hit">0</td>
+                    </tr>
+                    <tr class="notice_list_item">
+                        <td class="notice_no">02</td>
+                        <td class="notice_title">제목</td>
+                        <td class="notice_name">관리자</td>
+                        <td class="notice_date">2020-20-20</td>
+                        <td class="notice_hit">0</td>
+                    </tr>
+                    <tr class="notice_list_item">
+                        <td class="notice_no">03</td>
+                        <td class="notice_title">제목</td>
+                        <td class="notice_name">관리자</td>
+                        <td class="notice_date">2020-20-20</td>
+                        <td class="notice_hit">0</td>
+                    </tr>
+                    </table>
+                <div class="notice_page_div">
+                    <a><img src="/Project/imgs/left_button.gif"></a>
+                        <ul class="notice_page">
+                            <li><a href=""class="this_page">1</a></li>
+                            <li><a href=""class="">2</a></li>
+                        </ul>
+                    <a><img src="/Project/imgs/right_button.gif"></a>
+                </div>
+
+                <div>
+                    <select name="" id="search">
+                    <option value="">전체</option>
+                    <option value="">제목</option>
+                    <option value="">이름</option>
+                    <option value="">날짜</option>
+                    </select>
+                    <input type="text">
+                    <button class="search_btn">SEARCH</button>
+                </div>
+			</div>
+        </section>
+
+    <!-- 문의? Contact -->
+    <section id="contact" class="footer">
+    <img src="/Project/imgs/logo.png" alt="">
+        <p class="contact__title">Copyrights SWING 2019. All rights reserved.</p>
+        <p class="contact__email">회사명: The SWING Co.Ltd 대표자: 박부장 개인정보책임관리자: 박부장</p>
+        <p class="contact__email">사업자등록번호: 880-88-01247 통신판매업번호: 제 2020-서울성동-01153 호 주소: 서울시 성동구 왕십리로 115, 6층 609호</p>
+        <p class="contact__rights">대여약관 | 개인정보처리방침 | 서비스이용약관 | 위치기반서비스 이용약관 | 구독형 서비스 이용약관 | 월렌탈 서비스 이용약관</p>
+    </section>
+</body>
+</html>

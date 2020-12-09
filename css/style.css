@@ -107,6 +107,7 @@
       padding: 8px 16px;
       transition: all var(--animation-duration);
       background-color: var(--color-white);
+      z-index: 1;
   }
   #navbar:hover{
     box-shadow: 0 1px 3px 0 rgba(0,0,0,0.50);
@@ -418,7 +419,8 @@
 }
 
 .product__description span{
-  color: var(--color-white)
+  color: var(--color-white);
+  margin-bottom: 10px;
 }
 
 .product__description h3:after{

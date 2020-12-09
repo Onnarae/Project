@@ -90,12 +90,12 @@
     margin: 8px 0;  
   }
 
-  p {
+p {
     font-size: var(--font-regular);
     font-weight: var(--weight-regular);
     color: var(--color-black);
     margin: 4px 0 0 0;
-  }
+}
 
 
 /* 네비게이션 바 */
@@ -108,7 +108,7 @@
     align-items: center;
     padding: 8px 16px;
     transition: all var(--animation-duration);
-    background-color: var(--color-white);
+    background-color: transparent;
     min-width: 1280px;
 }
 #navbar:hover{
@@ -123,12 +123,15 @@
   z-index: 1;
 }
 
+#navbar.navbar--fixed .navbar__menu__item{
+    color: var(--color-grey);
+}
+
 .navbar__menu {
   display: flex;
 }
 
 .navbar__logo {
-  border-radius: 50%;
   width: 80px;
   height: 50px;
 }
@@ -138,26 +141,11 @@
     padding: 8px 12px;
     margin: 0 4px;
     cursor: pointer;
-    color: var(--color-grey);
+    color: var(--color-white);
     border: 1px solid transparent;
     border-radius: var(--size-border-radius);
     font-size: var(--font-small);
     font-weight: var(--weight-semi-bold);
-}
-
-
-.navbar__menu__item:hover {
-    border-color: var(--color-white);
-    border-radius: var(--size-border-radius);
-}
-
-.navbar__toggle-btn {
-  color: var(--color-black);
-  position: absolute;
-  top: 24px;
-  right: 32px;
-  font-size: 24px;
-  display: none;
 }
 
 /* 공지사항*/
@@ -233,6 +221,10 @@
     padding: 11px 0 10px;
 }
 
+.input_title, .input_name{
+    width: 100% !important;
+}
+
 .notice_list_item{
     font-size: 13px;
     border-bottom: 1px solid #dfdfdf;
@@ -255,6 +247,7 @@
     font-weight: bold;
 }
 
+
 .notice_textarea textarea{
     width: 100%;
     min-height: 500px;
@@ -266,10 +259,23 @@
     line-height: 150%;
 }
 
+.notice_textarea_write textarea{
+    width: 100%;
+    outline: none;
+    min-height: 500px;
+    border-bottom: 1px solid #dfdfdf;
+    resize: none;
+    margin: 10px 0;
+    overflow-y: hidden;
+    line-height: 150%;
+    border-top: 1px solid #dfdfdf;
+    
+}
+
 .movement_bar{
     border: 1px solid #d7d5d5;
     margin: 20px 0;
-    height: 87px;
+    height: 74px;
 }
 
 .movement_bar li strong, .movement_bar li a{
@@ -286,7 +292,6 @@
 }
 
 .movement_bar li a{
-
     border-left: 1px solid #e9e9e9;
 }
 
@@ -424,6 +429,86 @@ input[type="text"]{
     text-align: center;
     height: 28px;
 }
+
+.write_btn_div{
+    height: 50px;
+}
+
+.write_btn{
+    padding: 7px 23px 6px;
+    font-size: 11px;
+    margin: 20px 40px;
+    letter-spacing: 1px;
+    display: inline-block;
+    background: #fff;
+    border: 1px solid #d5d5d5;
+    text-align: center;
+    height: 28px;
+    float: right;
+}
+
+.update_btn{
+    padding: 7px 23px 6px;
+    font-size: 11px;
+    margin: 20px 10px;
+    letter-spacing: 1px;
+    display: inline-block;
+    background: #fff;
+    border: 1px solid #d5d5d5;
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    float: right
+}
+
+.delete_btn{
+    padding: 7px 23px 6px;
+    font-size: 11px;
+    margin: 20px 10px;
+    letter-spacing: 1px;
+    display: inline-block;
+    background: #fff;
+    border: 1px solid #d5d5d5;
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    float: right
+}
+.btn_set{
+    height: 50px;
+}
+
+.save_btn{
+    padding: 7px 23px 6px;
+    font-size: 11px;
+    margin: 20px 40px 0 20px;
+    letter-spacing: 1px;
+    display: inline-block;
+    background: #fff;
+    border: 1px solid #d5d5d5;
+    text-align: center;
+    height: 28px;
+    float: right;
+}
+
+.back_btn{
+    padding: 7px 23px 6px;
+    font-size: 11px;
+    margin: 20px 0;
+    letter-spacing: 1px;
+    display: inline-block;
+    background: #fff;
+    border: 1px solid #d5d5d5;
+    text-align: center;
+    height: 28px;
+    float: right;
+}
+
+.attach{
+    margin-left: 10px;
+}
+
+
 
 /* 하단 */
 .footer{

@@ -44,50 +44,29 @@
                     <thead class="notice_head_view">
                     <tr>
                         <td>제목</td>
-                        <td colspan="4">TITLE</td>
+                        <td colspan="4"><input type="text" class="input_title"></td>
                     </tr>
                     <tr class="notice_head_view">
                         <td class="">작성자</td>
-                        <td class="" colspan="4">관리자</td>
+                        <td colspan="4"><input type="text" class="input_name"></td>
                     </tr>
                     </thead>
-                    <tr class="notice_textarea">
-                        <td class="" colspan="5">
-                        <textarea readonly>
-                        내용입니다.
-
-
-
-
-                        이러면 띄어지나요
-
-
-
-
-                        엄청나!
-
-                        </textarea>
+                    <tr class="notice_textarea_write">
+                        <td>내용</td>
+                        <td class="" colspan="4">
+                        <textarea></textarea>
                         </td>
                     </tr>
-                    <tr>
-                        <td><a href="/Project/notice/notice.html"><img src="/Project/imgs/btn_list.gif" alt=""></a></td>
-                        <td><a href="/Project/notice/notice.html"><button class="delete_btn">삭제</button></a></td>
-                        <td><a href="/Project/notice/notice.html"><button class="update_btn">수정</button></a></td>
+                    <tr class="notice_head_view">
+                        <td>첨부파일</td>
+                        <td><input type="file" class="attach"></td>
                     </tr>
+                    
                     </table>
-
-                    <div class="movement_bar">
-                        <ul>
-                            <li class="prev">
-                            <strong>이전글</strong>
-                            <a href="">이전글~</a>
-                            </li>
-                            <li class="next">
-                            <strong>다음글</strong>
-                            <a href="">다음글~</a>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="btn_set">
+                    <a href="/Project/notice/notice.html"><button class="save_btn">저장하기</button></a>
+                    <a href="/Project/notice/notice.html"><button class="back_btn">이전으로</button></a>
+                </div>
                 
         </section>
 

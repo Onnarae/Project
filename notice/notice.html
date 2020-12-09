@@ -8,13 +8,13 @@
     <script src="https://kit.fontawesome.com/47f9d77be1.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/Project/css/notice.css"/>
-    <script src="/project/js/main.js" defer></script>
+    <script src="/Project/js/main.js" defer></script>
 </head>
 <body>
     <!-- 네비게이션 바 -->
     <nav id="navbar">
         <a href="/Project/index.html">
-            <img src="/Project/imgs/main_logo.jpeg"  class="navbar__logo"></img>
+            <img src="/Project/imgs/main_logo_bg.png"  class="navbar__logo"></img>
         </a>
             <ul class="navbar__menu">
                 <a href="/Project/notice/notice.html"><li class="navbar__menu__item active" >공지사항</li></a>
@@ -22,16 +22,16 @@
                 <a href="/Project/faq/faq.html"><li class="navbar__menu__item" >FAQ</li></a>
                 <a href="/Project/product/product.html"><li class="navbar__menu__item" >제품들</li></a>
                 <a href="/Project/review/review.html"><li class="navbar__menu__item" >사용후기</li></a>
+                <a href="/Project/login/myshopping.html"><li class="navbar__menu__item" >My Page</li></a>
                 <a href="/Project/login/login.html"><li class="navbar__menu__item" >Login</li></a>
             </ul>
     </nav>
-    <div class="main_banner">
+    <div class="main_banner" id="about">
         <img src="/Project/imgs/banner1.jpg" alt="">
         <h2>공지사항</h2>
         <p>공지사항 입니다.</p>
     </div>
-        <section class="notice_main">
-            
+        <section  class="notice_main">
             
                     <table border="0">
                     <colgroup>
@@ -94,7 +94,31 @@
                         <td class="notice_date">2020-20-20</td>
                         <td class="notice_hit">0</td>
                     </tr>
+                    <tr class="notice_list_item">
+                        <td class="notice_no">03</td>
+                        <td class="notice_title"><a href="/Project/notice/notice_view.html">제목</a></td>
+                        <td class="notice_name">관리자</td>
+                        <td class="notice_date">2020-20-20</td>
+                        <td class="notice_hit">0</td>
+                    </tr>
+                    <tr class="notice_list_item">
+                        <td class="notice_no">03</td>
+                        <td class="notice_title"><a href="/Project/notice/notice_view.html">제목</a></td>
+                        <td class="notice_name">관리자</td>
+                        <td class="notice_date">2020-20-20</td>
+                        <td class="notice_hit">0</td>
+                    </tr>
+                    <tr class="notice_list_item">
+                        <td class="notice_no">03</td>
+                        <td class="notice_title"><a href="/Project/notice/notice_view.html">제목</a></td>
+                        <td class="notice_name">관리자</td>
+                        <td class="notice_date">2020-20-20</td>
+                        <td class="notice_hit">0</td>
+                    </tr>
                     </table>
+                    <div class="write_btn_div">
+                    <a href="/Project/notice/notice_write.html"><button class="write_btn">WRITE</button></a>
+                    </div>
                 <div class="notice_page_div">
                     <a><img src="/Project/imgs/left_button.gif"></a>
                         <ul class="notice_page">
@@ -114,7 +138,7 @@
                     <input type="text">
                     <button class="search_btn">SEARCH</button>
                 </div>
-                
+            
         </section>
 
         <!-- 문의? Contact -->
