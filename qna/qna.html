@@ -14,7 +14,7 @@
     <!-- 네비게이션 바 -->
     <nav id="navbar">
         <a href="/Project/index.html">
-            <img src="/Project/imgs/main_logo.jpeg"  class="navbar__logo"></img>
+            <img src="/Project/imgs/main_logo_bg.png"  class="navbar__logo"></img>
         </a>
             <ul class="navbar__menu">
                 <a href="/Project/notice/notice.html"><li class="navbar__menu__item active" >공지사항</li></a>
@@ -22,23 +22,23 @@
                 <a href="/Project/faq/faq.html"><li class="navbar__menu__item" >FAQ</li></a>
                 <a href="/Project/product/product.html"><li class="navbar__menu__item" >제품들</li></a>
                 <a href="/Project/review/review.html"><li class="navbar__menu__item" >사용후기</li></a>
+                <a href="/Project/login/myshopping.html"><li class="navbar__menu__item" >My Page</li></a>
                 <a href="/Project/login/login.html"><li class="navbar__menu__item" >Login</li></a>
             </ul>
-
-        <!-- Toggle buttton -->
-        <button class="navbar__toggle-btn">
-            <i class="fas fa-bars"></i>
-        </button>
-        
     </nav>
-
+    <!-- 배너 -->
+    <div class="main_banner" id="about">
+        <img src="/Project/imgs/banner21.jpg" alt="">
+        <h2>Q&A</h2>
+        <p>Q&A 문의게시판입니다</p>
+    </div>
+    
+        <!-- 메인 -->
         <section class="qna_main">
-            <h2>Q&A</h2>
-                <p>Q&A 문의게시판입니다.</p>
                     <table border="0">
                     <colgroup>
 						<col width="70px">
-                        <col width="100px">
+                        <col width="310px">
 						<col width="*">
 						<col width="84px">
 						<col width="80px">
@@ -57,7 +57,7 @@
                     <tr class="qna_list_item">
                         <td class="qna_no">공지</td>
                         <td class="qna_product">상품 1</td>
-                        <td class="qna_title_fix">[필독] 교환 및 반품 안내</td>
+                        <td class="qna_title_fix">[필독] 교환 및 반품 안내</td>
                         <td class="qna_name">관리자</td>
                         <td class="qna_date">2020-20-20</td>
                         <td class="qna_hit">0</td>
@@ -65,7 +65,7 @@
 
                     <tr class="qna_list_item">
                         <td class="qna_no">공지</td>
-                        <td class="qna_product">상품 1</td>
+                        <td class="qna_product"><img src="/Project/imgs/kickboard12.png" alt=""><span>TC-12</span></td>
                         <td class="qna_title_fix">[필독] 결제 수단 안내</td>
                         <td class="qna_name">관리자</td>
                         <td class="qna_date">2020-20-20</td>
@@ -97,7 +97,13 @@
                         <td class="qna_hit">0</td>
                     </tr>
                     </table>
-                <div class="qna_page_div">
+                    <!-- 글쓰기 버튼 -->
+                    <div class="write_btn_div">
+                        <a href="/Project/qna/qna_write.html"><button class="write_btn">WRITE</button></a>
+                    </div>
+
+                    <!-- 페이지 -->
+                    <div class="qna_page_div">
                     <a><img src="/Project/imgs/left_button.gif"></a>
                         <ul class="qna_page">
                             <li><a href=""class="this_page">1</a></li>
@@ -106,6 +112,7 @@
                     <a><img src="/Project/imgs/right_button.gif"></a>
                 </div>
 
+                <!-- 검색창 -->
                 <div>
                     <select name="" id="search">
                     <option value="">전체</option>
@@ -120,14 +127,14 @@
                 
         </section>
 
-        <!-- 문의? Contact -->
-    <section id="contact" class="section">
-    <img src="imgs/main_logo.jpeg" alt="">
-        <p class="contact__title">Copyrights SWING 2019. All rights reserved.</p>
-        <p class="contact__email">회사명: The SWING Co.Ltd 대표자: 박부장 개인정보책임관리자: 박부장</p>
-        <p class="contact__email">사업자등록번호: 880-88-01247 통신판매업번호: 제 2020-서울성동-01153 호 주소: 서울시 성동구 왕십리로 115, 6층 609호</p>
-        <p class="contact__rights">대여약관 | 개인정보처리방침 | 서비스이용약관 | 위치기반서비스 이용약관 | 구독형 서비스 이용약관 | 월렌탈 서비스 이용약관</p>
-    </section>
+    <!-- footer -->
+    <section id="contact" class="footer">
+        <img src="/Project/imgs/logo.png" alt="">
+            <p class="contact__title">Copyrights SWING 2019. All rights reserved.</p>
+            <p class="contact__email">회사명: The SWING Co.Ltd 대표자: 박부장 개인정보책임관리자: 박부장</p>
+            <p class="contact__email">사업자등록번호: 880-88-01247 통신판매업번호: 제 2020-서울성동-01153 호 주소: 서울시 성동구 왕십리로 115, 6층 609호</p>
+            <p class="contact__rights">대여약관 | 개인정보처리방침 | 서비스이용약관 | 위치기반서비스 이용약관 | 구독형 서비스 이용약관 | 월렌탈 서비스 이용약관</p>
+        </section>
     
 </body>
 </html>
