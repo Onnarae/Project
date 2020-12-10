@@ -7,7 +7,7 @@
     <link rel="icon" type="image/png" href="imgs/logo.jpg"/>
     <script src="https://kit.fontawesome.com/47f9d77be1.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/Project/css/notice.css"/>
+    <link rel="stylesheet" href="/Project/css/review.css"/>
     <script src="/project/js/main.js" defer></script>
 
 </head>
@@ -30,13 +30,13 @@
 
         <!-- 배너 -->
         <div class="main_banner" id="about">
-        <img src="/Project/imgs/banner1.jpg" alt="">
-        <h2>공지사항</h2>
-        <p>공지사항 입니다.</p>
+        <img src="/Project/imgs/banner4.jpg" alt="">
+        <h2>REVIEW</h2>
+        <p>상품 사용후기입니다.</p>
         </div>
 
         <!-- 메인 -->
-        <section class="notice_main">
+        <section class="review_main">
                     <table border="0">
                     <colgroup>
 						<col width="100px">
@@ -45,31 +45,53 @@
 						<col width="80px">
 						<col width="55px">
 					</colgroup>
-                    <thead class="notice_head_view">
+                    <thead class="review_head_write">
+                    <tr>
+                        <td>제품</td>
+                        <td colspan="5">
+                        <select name="product" id="product">
+                        <option value="" disabled selected>제품을 선택해 주세요.</option>
+                        <option value="">TC-01</option>
+                        <option value="">TC-02</option>
+                        <option value="">TC-03</option>
+                        <option value="">TC-04</option>
+                        <option value="">TC-05</option>
+                        <option value="">TC-06</option>
+                        <option value="">TC-07</option>
+                        <option value="">TC-08</option>
+                        <option value="">TC-09</option>
+                        <option value="">TC-10</option>
+                        <option value="">TC-11</option>
+                        <option value="">TC-12</option>
+                        </select>
+                        </td>
+                    </tr>
+                    </thead>
+                    <thead class="review_head_write">
                     <tr>
                         <td>제목</td>
                         <td colspan="4"><input type="text" class="input_title"></td>
                     </tr>
-                    <tr class="notice_head_view">
+                    <tr class="review_head_write">
                         <td class="">작성자</td>
                         <td colspan="4"><input type="text" class="input_name"></td>
                     </tr>
                     </thead>
-                    <tr class="notice_textarea_write">
+                    <tr class="review_head_write">
                         <td>내용</td>
                         <td class="" colspan="4">
-                        <textarea></textarea>
+                        <textarea id="review_textarea"></textarea>
                         </td>
                     </tr>
-                    <tr class="notice_head_view">
+                    <tr class="review_head_write">
                         <td>첨부파일</td>
                         <td><input type="file" class="attach"></td>
                     </tr>
                     </table>
                 <!-- 버튼세트 -->
                 <div class="btn_set">
-                    <a href="/Project/notice/notice.html"><button class="save_btn">저장하기</button></a>
-                    <a href="/Project/notice/notice.html"><button class="back_btn">이전으로</button></a>
+                    <a href="/Project/review/review.html"><button class="save_btn">저장하기</button></a>
+                    <a href="/Project/review/review.html"><button class="back_btn">이전으로</button></a>
                 </div>
         </section>
 

@@ -8,13 +8,15 @@
     <script src="https://kit.fontawesome.com/47f9d77be1.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/Project/css/faq.css"/>
+    <script src="/project/js/jquery-3.5.1.js"></script>
     <script src="/project/js/main.js" defer></script>
+    <script src="/project/js/faq_list.js" defer></script>
 </head>
 <body>
     <!-- 네비게이션 바 -->
     <nav id="navbar">
         <a href="/Project/index.html">
-            <img src="/Project/imgs/main_logo.jpeg"  class="navbar__logo"></img>
+            <img src="/Project/imgs/main_logo_bg.png"  class="navbar__logo"></img>
         </a>
             <ul class="navbar__menu">
                 <a href="/Project/notice/notice.html"><li class="navbar__menu__item active" >공지사항</li></a>
@@ -22,19 +24,19 @@
                 <a href="/Project/faq/faq.html"><li class="navbar__menu__item" >FAQ</li></a>
                 <a href="/Project/product/product.html"><li class="navbar__menu__item" >제품들</li></a>
                 <a href="/Project/review/review.html"><li class="navbar__menu__item" >사용후기</li></a>
+                <a href="/Project/login/myshopping.html"><li class="navbar__menu__item" >My Page</li></a>
                 <a href="/Project/login/login.html"><li class="navbar__menu__item" >Login</li></a>
             </ul>
-
-        <!-- Toggle buttton -->
-        <button class="navbar__toggle-btn">
-            <i class="fas fa-bars"></i>
-        </button>
-        
     </nav>
 
+    <!-- 배너 -->
+    <div class="main_banner" id="about">
+        <img src="/Project/imgs/banner3.jpg" alt="">
+        <h2>FAQ</h2>
+        <p>자주 묻는 질문</p>
+    </div>
+
         <section class="faq_main">
-            <h2>FAQ</h2>
-                <p>자주 묻는 질문</p>
                     <table border="0">
                     <colgroup>
 						<col width="70px">
@@ -53,8 +55,17 @@
                     <tr class="faq_list_item">
                         <td class="faq_no">00</td>
                         <td class="faq_category">카테고리</td>
-                        <td class="faq_title">제목</td>
+                        <td class="faq_title" style="cursor:pointer;color:#gray;" onclick="answer()">제목</td>
                         <td class="faq_name">관리자</td>
+                    </tr>
+                    <tr class="faq_list_item" id="answer" style="display:none;">
+                    <td colspan="4"> 
+                    답변입니다. 
+                    <div class="btn_set">
+                    <a href="/Project/faq/faq_update.html"><button class="update_btn">DELETE</button></a>
+                    <a href="/Project/faq/faq_update.html"><button class="delete_btn">UPDATE</button></a>
+                    </div>
+                    </td>
                     </tr>
                     <tr class="faq_list_item">
                         <td class="faq_no">00</td>
@@ -81,6 +92,12 @@
                         <td class="faq_name">관리자</td>
                     </tr>
                     </table>
+
+                    <!-- 글쓰기 버튼 -->
+                    <div class="write_btn_div">
+                    <a href="/Project/faq/faq_write.html"><button class="write_btn">WRITE</button></a>
+                    </div>
+
                 <div class="faq_page_div">
                     <a><img src="/Project/imgs/left_button.gif"></a>
                         <ul class="faq_page">
@@ -89,7 +106,6 @@
                         </ul>
                     <a><img src="/Project/imgs/right_button.gif"></a>
                 </div>
-
                 <div>
                     <select name="" id="search">
                     <option value="">전체</option>
@@ -100,12 +116,14 @@
                     <input type="text">
                     <button class="search_btn">SEARCH</button>
                 </div>
+
+                
                 
         </section>
 
-        <!-- 문의? Contact -->
-    <section id="contact" class="section">
-    <img src="imgs/main_logo.jpeg" alt="">
+    <!-- footer -->
+    <section id="contact" class="footer">
+    <img src="/Project/imgs/logo.png" alt="">
         <p class="contact__title">Copyrights SWING 2019. All rights reserved.</p>
         <p class="contact__email">회사명: The SWING Co.Ltd 대표자: 박부장 개인정보책임관리자: 박부장</p>
         <p class="contact__email">사업자등록번호: 880-88-01247 통신판매업번호: 제 2020-서울성동-01153 호 주소: 서울시 성동구 왕십리로 115, 6층 609호</p>

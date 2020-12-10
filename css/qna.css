@@ -46,7 +46,7 @@ body{
 
 a{
     text-decoration: none;
-    color: var(--color-white);
+    color: var(--color-black);
 }
 
 ul{
@@ -177,6 +177,10 @@ p {
 }
 
 /* 공지사항*/
+.myquestion{
+    text-align: left;
+    margin-left: 35px;
+}
 .qna_main{
     padding: 40px;
     text-align: center;
@@ -186,6 +190,12 @@ p {
 .qna_main p{
     padding-bottom: 15px;
     
+}
+
+.qna_main table{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1280px;
 }
 
 .qna_head{
@@ -198,8 +208,27 @@ p {
     color: #353535;
 }
 
+.qna_head_write{
+    font-size: 11px;
+    font-weight: normal;
+    vertical-align: middle;
+    letter-spacing: 1px;
+    border-top: 1px solid #dfdfdf;
+    border-bottom: 1px solid #dfdfdf;
+    color: #353535;
+    text-align: left;
+}
+
+.qna_head_write td{
+    padding: 11px 0 10px;
+}
+
 .qna_head td{
     padding: 11px 0 10px;
+}
+
+.q_title, .q_name{
+    width: 100% !important;
 }
 
 .qna_list_item{
@@ -222,6 +251,28 @@ p {
 .qna_list_item .qna_title_fix{
     text-align: left;
     font-weight: bold;
+}
+
+#q_textarea{
+    width: 100%;
+    min-height: 500px;
+    border-bottom: 1px solid #dfdfdf;
+    border: 0;
+    outline: none;
+    resize: none;
+    overflow-y: hidden;
+    line-height: 150%;
+}
+
+#a_textarea{
+    width: 100%;
+    min-height: 500px;
+    border-bottom: 1px solid #dfdfdf;
+    border: 0;
+    outline: none;
+    resize: none;
+    overflow-y: hidden;
+    line-height: 150%;
 }
 
 .qna_product img{
@@ -356,10 +407,62 @@ input[type="text"]{
     float: right;
 }
 
+.btn_set{
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.save_btn{
+    padding: 7px 23px 6px;
+    font-size: 11px;
+    color: white;
+    margin: 20px 40px 0 20px;
+    letter-spacing: 1px;
+    display: inline-block;
+    background: #585858;
+    border: 1px solid #d5d5d5;
+    text-align: center;
+    height: 28px;
+    float: right;
+}
+
+.update_btn{
+    padding: 7px 23px 6px;
+    font-size: 11px;
+    color: white;
+    margin: 20px 40px 0 20px;
+    letter-spacing: 1px;
+    display: inline-block;
+    background: #585858;
+    border: 1px solid #d5d5d5;
+    text-align: center;
+    height: 28px;
+    float: right;
+}
+
+.back_btn{
+    padding: 7px 23px 6px;
+    font-size: 11px;
+    margin: 20px 0;
+    letter-spacing: 1px;
+    display: inline-block;
+    background: #fff;
+    border: 1px solid #d5d5d5;
+    text-align: center;
+    height: 28px;
+    float: right;
+}
+
+.attach{
+    margin-left: 10px;
+}
+
+
 /* 하단 */
 .footer{
     text-align: center;
     background-color: var(--color-light-grey);
+    padding: 10px;
 }
 
 .footer p{

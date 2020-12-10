@@ -30,11 +30,16 @@
     <div class="main_banner" id="about">
         <img src="/Project/imgs/banner21.jpg" alt="">
         <h2>Q&A</h2>
-        <p>Q&A 문의게시판입니다</p>
+        <p>Q&A 문의게시판입니다.</p>
     </div>
+
+    
     
         <!-- 메인 -->
         <section class="qna_main">
+        <div class="myquestion">
+        <input type="checkbox">내가 질문한 글만 보기</input>
+    </div>
                     <table border="0">
                     <colgroup>
 						<col width="70px">
@@ -46,7 +51,7 @@
 					</colgroup>
                     <thead class="qna_head">
                     <tr>
-                        <td>NO</td>
+                        <td>답변상태</td>
                         <td>PRODUCT INFO</td>
                         <td>TITLE</td>
                         <td>POSTED BY</td>
@@ -55,51 +60,17 @@
                     </tr>
                     </thead>
                     <tr class="qna_list_item">
-                        <td class="qna_no">공지</td>
-                        <td class="qna_product">상품 1</td>
-                        <td class="qna_title_fix">[필독] 교환 및 반품 안내</td>
-                        <td class="qna_name">관리자</td>
-                        <td class="qna_date">2020-20-20</td>
-                        <td class="qna_hit">0</td>
-                    </tr>
-
-                    <tr class="qna_list_item">
-                        <td class="qna_no">공지</td>
+                        <td class="qna_state">완료</td>
                         <td class="qna_product"><img src="/Project/imgs/kickboard12.png" alt=""><span>TC-12</span></td>
-                        <td class="qna_title_fix">[필독] 결제 수단 안내</td>
-                        <td class="qna_name">관리자</td>
-                        <td class="qna_date">2020-20-20</td>
-                        <td class="qna_hit">0</td>
-                    </tr>
-
-                    <tr class="qna_list_item">
-                        <td class="qna_no">01</td>
-                        <td class="qna_product">상품 1</td>
-                        <td class="qna_title">제목</td>
-                        <td class="qna_name">관리자</td>
-                        <td class="qna_date">2020-20-20</td>
-                        <td class="qna_hit">0</td>
-                    </tr>
-                    <tr class="qna_list_item">
-                        <td class="qna_no">02</td>
-                        <td class="qna_product">상품 1</td>
-                        <td class="qna_title">제목</td>
-                        <td class="qna_name">관리자</td>
-                        <td class="qna_date">2020-20-20</td>
-                        <td class="qna_hit">0</td>
-                    </tr>
-                    <tr class="qna_list_item">
-                        <td class="qna_no">03</td>
-                        <td class="qna_product">상품 1</td>
-                        <td class="qna_title">제목</td>
-                        <td class="qna_name">관리자</td>
+                        <td class="qna_title"><a href="/Project/qna/qna_view.html">대여 일자 관련 질문</a></td>
+                        <td class="qna_name">대여자</td>
                         <td class="qna_date">2020-20-20</td>
                         <td class="qna_hit">0</td>
                     </tr>
                     </table>
                     <!-- 글쓰기 버튼 -->
                     <div class="write_btn_div">
-                        <a href="/Project/qna/qna_write.html"><button class="write_btn">WRITE</button></a>
+                        <a href="/Project/qna/q_write.html"><button class="write_btn">WRITE</button></a>
                     </div>
 
                     <!-- 페이지 -->

@@ -100,19 +100,25 @@
                 <a href="/Project/notice/notice.html"><li class="navbar__menu__item active" >공지사항</li></a>
                 <a href="/Project/qna/qna.html"><li class="navbar__menu__item" >QNA</li></a>
                 <a href="/Project/faq/faq.html"><li class="navbar__menu__item" >FAQ</li></a>
-                <a href="/Project/product/product.html"><li class="navbar__menu__item" >제품들</li></a>
+                <a href="/Project/product/area_date.html"><li class="navbar__menu__item" >제품들</li></a>
                 <a href="/Project/review/review.html"><li class="navbar__menu__item" >사용후기</li></a>
+                <a href="/Project/login/myshopping.html"><li class="navbar__menu__item" >My Page</li></a>
                 <a href="/Project/login/login.html"><li class="navbar__menu__item" >Login</li></a>
             </ul>
-
     </nav>
-<div class="main_banner" id="about">
+		<!-- 배너 -->	
+		<div class="main_banner" id="about">
         <img src="/Project/imgs/banner23.jpg" alt="">
         <h2>회원 가입</h2>
-        <h3>기본정보</h3>
-    </div>
+    	</div>
         <section class="join_main">
             <form name="mem">
+			<div class="info_title">
+			<h3>기본정보</h3>
+			<p class="required">
+			<img src="/Project/imgs/join_icon.gif" alt="">필수입력사항
+			</p>
+			</div>
 			<table class="boardForm">
 			  <colgroup>
 				<col width="150px" />
@@ -120,7 +126,7 @@
 			  </colgroup>
 			  <tbody>
 				<tr>
-				  <th><label for="id">I D</label></th>
+				  <th><label for="id">I D<img src="/Project/imgs/join_icon.gif" alt=""></label></th>
 				  <td>
 					<input name="t_id" type="text" size="16" id="id" title="id입력하세요">
 					
@@ -132,7 +138,7 @@
 				  </td>
 				</tr>
 				<tr>
-				  <th>비밀번호</th>
+				  <th>비밀번호<img src="/Project/imgs/join_icon.gif" alt=""></th>
 				  <td>
 				  <input  name="t_pw" type="password" size="16">
 				  (영문 대소문자/숫자/특수문자 중 2가지 이상 조합, 8~16자)
@@ -140,22 +146,22 @@
 				</tr>
 				
 				<tr>
-				  <th>비밀번호확인</th>
+				  <th>비밀번호확인<img src="/Project/imgs/join_icon.gif" alt=""></th>
 				  <td><input  name="t_pw_confirm" type="password" size="16"></td>
 				</tr>
 				<tr>
 				<tr>
-				  <th><label for="nana">성 명</label></th>
+				  <th><label for="nana">성 명<img src="/Project/imgs/join_icon.gif" alt=""></label></th>
 				  <td><input name="t_name" type="text" size="16" id="nana"></td>
 				</tr>
 				
 				<tr>
-				  <th>주소</th>
+				  <th>주소<img src="/Project/imgs/join_icon.gif" alt=""></th>
 				  <td><input  name="t_address" type="text" size="40"></td>
 				</tr>
 				
 				<tr>
-				  <th>연락처</th>
+				  <th>연락처<img src="/Project/imgs/join_icon.gif" alt=""></th>
 				  <td>
 					<input id="tel_1" name="t_tel_1" type="text" maxlength="3"> -
 					<input id="tel_2" name="t_tel_2" type="text" maxlength="4"> -
@@ -165,7 +171,7 @@
 				
 				<tr>
 				<tr>
-				  <th>이메일</th>
+				  <th>이메일<img src="/Project/imgs/join_icon.gif" alt=""></th>
 				  <td>
 				  <input  name="t_email1" type="text" size="16">
 				  <span>@</span>

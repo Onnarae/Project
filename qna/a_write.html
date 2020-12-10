@@ -45,34 +45,30 @@
                 <col width="80px">
                 <col width="55px">
             </colgroup>
-            <thead class="qna_head">
-            <tr>
+            <thead class="qna_head_write">
+            <tr class="qna_head_write">
                 <td>제목</td>
-                <td>PRODUCT INFO</td>
-                <td>TITLE</td>
-                <td>POSTED BY</td>
-                <td>DATE</td>
-                <td>VIEW</td>
+                <td colspan="5"><input type="text" class="q_title"></td>
             </tr>
             </thead>
-            <tr class="qna_head">
-                <td>제품</td>
-                <td>상품 1</td>
-                <td>[필독] 교환 및 반품 안내</td>
-                <td>관리자</td>
-                <td>2020-20-20</td>
-                <td>0</td>
+            <tr class="qna_head_write">
+                <td>등록자</td>
+                <td colspan="5"><input type="text" class="q_name"></td>
             </tr>
-            <tr class="qna_head">
-                <td>공지</td>
-                <td>상품 1</td>
-                <td>[필독] 교환 및 반품 안내</td>
-                <td>관리자</td>
-                <td>2020-20-20</td>
-                <td>0</td>
+            <tr class="qna_head_write">
+                <td>내용</td>
+                <td colspan="5"><textarea name="" id="q_textarea" cols="230" rows="50"></textarea></td>
             </tr>
-            
+            <tr class="qna_head_write">
+                <td>첨부파일</td>
+                <td colspan="5"><input type="file" class="attach"></td>
+            </tr>
             </table>
+            <!-- 버튼세트 -->
+            <div class="btn_set">
+                <a href="/Project/qna/qna.html"><button class="save_btn">저장하기</button></a>
+                <a href="/Project/qna/qna.html"><button class="back_btn">이전으로</button></a>
+            </div>
 
     <!-- footer -->
     <section id="contact" class="footer">

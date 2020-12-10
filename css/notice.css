@@ -114,6 +114,7 @@ p {
 #navbar:hover{
   box-shadow: 0 1px 3px 0 rgba(0,0,0,0.50);
 }
+
 #navbar.navbar--fixed{
   position: fixed;
   background-color: var(--color-white);
@@ -483,10 +484,11 @@ input[type="text"]{
 .save_btn{
     padding: 7px 23px 6px;
     font-size: 11px;
+    color: white;
     margin: 20px 40px 0 20px;
     letter-spacing: 1px;
     display: inline-block;
-    background: #fff;
+    background: #585858;
     border: 1px solid #d5d5d5;
     text-align: center;
     height: 28px;

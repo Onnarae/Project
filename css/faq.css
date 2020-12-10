@@ -107,7 +107,6 @@
     align-items: center;
     padding: 8px 16px;
     transition: all var(--animation-duration);
-    background-color: var(--color-white);
 }
 #navbar:hover{
   box-shadow: 0 1px 3px 0 rgba(0,0,0,0.50);
@@ -119,6 +118,10 @@
   opacity: 90%;
   box-shadow: 0 1px 3px 0 rgba(0,0,0,0.50);
   z-index: 1;
+}
+
+#navbar.navbar--fixed .navbar__menu__item{
+    color: var(--color-grey);
 }
 
 .navbar__menu {
@@ -136,17 +139,11 @@
     padding: 8px 12px;
     margin: 0 4px;
     cursor: pointer;
-    color: var(--color-grey);
+    color: var(--color-white);
     border: 1px solid transparent;
     border-radius: var(--size-border-radius);
     font-size: var(--font-small);
     font-weight: var(--weight-semi-bold);
-}
-
-
-.navbar__menu__item:hover {
-    border-color: var(--color-white);
-    border-radius: var(--size-border-radius);
 }
 
 .navbar__toggle-btn {
@@ -156,6 +153,35 @@
   right: 32px;
   font-size: 24px;
   display: none;
+}
+
+/* 배너 */
+.main_banner{
+    text-align: center;
+}
+.main_banner img{
+    width: 100%;
+    margin-top: -45%;
+}
+
+.main_banner h2{
+    padding: 5px 10px;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+    transform: translate( -50%, -420% );
+    color: white;
+}
+
+.main_banner p{
+    padding: 5px 10px;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+    transform: translate( -50%, -400% );
+    color: white;
 }
 
 /* 공지사항*/
@@ -182,6 +208,21 @@
     color: #353535;
 }
 
+.faq_head_write{
+    font-size: 11px;
+    font-weight: normal;
+    vertical-align: middle;
+    letter-spacing: 1px;
+    border-top: 1px solid #dfdfdf;
+    border-bottom: 1px solid #dfdfdf;
+    color: #353535;
+    text-align: left;
+}
+
+.faq_head_write td{
+    padding: 11px 0 10px;
+}
+
 .faq_head td{
     padding: 11px 0 10px;
 }
@@ -206,6 +247,23 @@
 .faq_list_item .notice_title_fix{
     text-align: left;
     font-weight: bold;
+}
+
+.input_title, .input_name{
+    width: 100% !important;
+}
+
+#faq_textarea_write{
+    width: 100%;
+    outline: none;
+    min-height: 500px;
+    border-bottom: 1px solid #dfdfdf;
+    resize: none;
+    margin: 10px 0;
+    overflow-y: hidden;
+    line-height: 150%;
+    border-top: 1px solid #dfdfdf;
+    
 }
 
 /* 페이지 */
@@ -243,7 +301,6 @@
 
 
 .faq_page_div img{
-    margin-top: 12px;
     vertical-align: top;
 }
 
@@ -312,8 +369,98 @@ input[type="text"]{
     height: 28px;
 }
 
+.btn_set{
+    height: 50px;
+}
+
+.write_btn_div{
+    height: 50px;
+}
+
+.write_btn{
+    padding: 7px 23px 6px;
+    font-size: 11px;
+    margin: 20px 10px;
+    letter-spacing: 1px;
+    display: inline-block;
+    background: #fff;
+    border: 1px solid #d5d5d5;
+    text-align: center;
+    height: 28px;
+    float: right;
+}
+
+.update_btn{
+    padding: 7px 23px 6px;
+    font-size: 11px;
+    margin: 20px 10px;
+    letter-spacing: 1px;
+    display: inline-block;
+    background: #fff;
+    border: 1px solid #d5d5d5;
+    text-align: center;
+    height: 28px;
+    float: right;
+}
+
+.delete_btn{
+    padding: 7px 23px 6px;
+    font-size: 11px;
+    margin: 20px 10px;
+    letter-spacing: 1px;
+    display: inline-block;
+    background: #fff;
+    border: 1px solid #d5d5d5;
+    text-align: center;
+    height: 28px;
+    float: right;
+}
+
+.save_btn{
+    padding: 7px 23px 6px;
+    font-size: 11px;
+    color: white;
+    margin: 20px 40px 0 20px;
+    letter-spacing: 1px;
+    display: inline-block;
+    background: #585858;
+    border: 1px solid #d5d5d5;
+    text-align: center;
+    height: 28px;
+    float: right;
+}
+
+.back_btn{
+    padding: 7px 23px 6px;
+    font-size: 11px;
+    margin: 20px 0;
+    letter-spacing: 1px;
+    display: inline-block;
+    background: #fff;
+    border: 1px solid #d5d5d5;
+    text-align: center;
+    height: 28px;
+    float: right;
+}
+
+.attach{
+    margin-left: 10px;
+}
+
 /* 하단 */
 .footer{
     text-align: center;
+    background-color: var(--color-light-grey);
+    padding: 10px;
+}
+
+.footer p{
+    font-size: 12px;
+    color: white;
+}
+
+.footer img{
+    width: 80px;
+    height: 55px;
 }
 

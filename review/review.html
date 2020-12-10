@@ -14,26 +14,26 @@
     <!-- 네비게이션 바 -->
     <nav id="navbar">
         <a href="/Project/index.html">
-            <img src="/Project/imgs/main_logo.jpeg"  class="navbar__logo"></img>
+            <img src="/Project/imgs/main_logo_bg.png"  class="navbar__logo"></img>
         </a>
             <ul class="navbar__menu">
                 <a href="/Project/notice/notice.html"><li class="navbar__menu__item active" >공지사항</li></a>
                 <a href="/Project/qna/qna.html"><li class="navbar__menu__item" >QNA</li></a>
                 <a href="/Project/faq/faq.html"><li class="navbar__menu__item" >FAQ</li></a>
-                <a href="/Project/product/product.html"><li class="navbar__menu__item" >제품들</li></a>
+                <a href="/Project/product/area_date.html"><li class="navbar__menu__item" >제품들</li></a>
                 <a href="/Project/review/review.html"><li class="navbar__menu__item" >사용후기</li></a>
+                <a href="/Project/login/myshopping.html"><li class="navbar__menu__item" >My Page</li></a>
                 <a href="/Project/login/login.html"><li class="navbar__menu__item" >Login</li></a>
             </ul>
-        <!-- Toggle buttton -->
-        <button class="navbar__toggle-btn">
-            <i class="fas fa-bars"></i>
-        </button>
-        
     </nav>
+    <!-- 배너 -->
+    <div class="main_banner" id="about">
+        <img src="/Project/imgs/banner4.jpg" alt="">
+        <h2>REVIEW</h2>
+        <p>상품 사용후기입니다.</p>
+    </div>
 
         <section class="review_main">
-            <h2>REVIEW</h2>
-                <p>상품 사용후기입니다.</p>
                     <table border="0">
                     <colgroup>
 						<col width="70px">
@@ -53,46 +53,16 @@
                     </thead>
                     <tr class="review_list_item">
                         <td class="review_no">01</td>
-                        <td class="review_product">상품1</td>
-                        <td class="review_title_fix">[필독] 교환 및 반품 안내</td>
+                        <td class="review_product"><img src="/Project/imgs/kickboard12.png" alt=""><span>TC-12</span></td>
+                        <td class="review_title_fix"><a href="/Project/review/review_view.html">[필독] 교환 및 반품 안내</a></td>
                         <td class="review_name">관리자</td>
                         <td class="review_date">2020-20-20</td>
-                    </tr>
-
-                    <tr class="review_list_item">
-                        <td class="review_no">02</td>
-                        <td class="review_product">상품1</td>
-                        <td class="review_title_fix">[필독] 결제 수단 안내</td>
-                        <td class="review_name">관리자</td>
-                        <td class="review_date">2020-20-20</td>
-
-                    </tr>
-
-                    <tr class="review_list_item">
-                        <td class="review_no">03</td>
-                        <td class="review_product">상품1</td>
-                        <td class="review_title">제목</td>
-                        <td class="review_name">관리자</td>
-                        <td class="review_date">2020-20-20</td>
-                        
-                    </tr>
-                    <tr class="review_list_item">
-                        <td class="review_no">04</td>
-                        <td class="review_product">상품1</td>
-                        <td class="review_title">제목</td>
-                        <td class="review_name">관리자</td>
-                        <td class="review_date">2020-20-20</td>
-
-                    </tr>
-                    <tr class="review_list_item">
-                        <td class="review_no">05</td>
-                        <td class="review_product">상품1</td>
-                        <td class="review_title">제목</td>
-                        <td class="review_name">관리자</td>
-                        <td class="review_date">2020-20-20</td>
-                        
                     </tr>
                     </table>
+                    <!-- 글쓰기 버튼 -->
+                    <div class="write_btn_div">
+                    <a href="/Project/review/review_write.html"><button class="write_btn">WRITE</button></a>
+                    </div>
                 <div class="review_page_div">
                     <a><img src="/Project/imgs/left_button.gif"></a>
                         <ul class="review_page">
@@ -115,9 +85,9 @@
                 
         </section>
 
-        <!-- 문의? Contact -->
-    <section id="contact" class="section">
-    <img src="imgs/main_logo.jpeg" alt="">
+        <!-- footer -->
+    <section id="contact" class="footer">
+    <img src="/Project/imgs/logo.png" alt="">
         <p class="contact__title">Copyrights SWING 2019. All rights reserved.</p>
         <p class="contact__email">회사명: The SWING Co.Ltd 대표자: 박부장 개인정보책임관리자: 박부장</p>
         <p class="contact__email">사업자등록번호: 880-88-01247 통신판매업번호: 제 2020-서울성동-01153 호 주소: 서울시 성동구 왕십리로 115, 6층 609호</p>

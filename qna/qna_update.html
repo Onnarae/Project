@@ -7,7 +7,7 @@
     <link rel="icon" type="image/png" href="imgs/logo.jpg"/>
     <script src="https://kit.fontawesome.com/47f9d77be1.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/Project/css/review.css"/>
+    <link rel="stylesheet" href="/Project/css/qna.css"/>
     <script src="/project/js/main.js" defer></script>
 
 </head>
@@ -29,60 +29,65 @@
     </nav>
     <!-- 배너 -->
         <div class="main_banner" id="about">
-        <img src="/Project/imgs/banner4.jpg" alt="">
-        <h2>REVIEW</h2>
-        <p>상품 사용후기입니다.</p>
+        <img src="/Project/imgs/banner21.jpg" alt="">
+        <h2>Q&A</h2>
+        <p>Q&A 입니다.</p>
         </div>
 
         <!-- 메인 -->
-        <section class="review_main">
+        <section class="qna_main">
             <table border="0">
             <colgroup>
                 <col width="70px">
+                <col width="310px">
                 <col width="*">
+                <col width="84px">
+                <col width="80px">
+                <col width="55px">
             </colgroup>
-            <thead class="review_head_write">
-            </thead>
-            <tr class="review_head_write">
+            <thead class="qna_head_write">
+            <tr class="qna_head_write">
                 <td>제목</td>
-                <td colspan="5">이거인가요</td>
+                <td colspan="5"><input type="text" class="q_title"></td>
             </tr>
-            <tr class="review_head_write">
-                <td>질문자</td>
-                <td colspan="5">지나가는 사람</td>
+            </thead>
+            <tr class="qna_head_write">
+                <td>등록자</td>
+                <td colspan="5"><input type="text" class="q_name"></td>
             </tr>
-            <tr class="review_head_write">
-                <td>제품</td>
-                <td class="review_product" colspan="4"><img src="/Project/imgs/kickboard12.png" alt=""><span>TC-12</span></td>
-            </tr>
-            <tr class="review_head_write">
+            <tr class="qna_head_write">
                 <td>내용</td>
-                <td colspan="5"><textarea name="" id="review_textarea" readonly>
-                    정말
-
-                    하기
-                    
-                    싫네요
-
-                    이거
-
-                    맞나
-
-                    요?
-                </textarea></td>
+                <td colspan="5"><textarea name="" id="q_textarea" cols="230" rows="50"></textarea></td>
             </tr>
-            <tr class="review_head_write">
+            <tr class="qna_head_write">
+                <td>첨부파일</td>
+                <td colspan="5"><input type="file" class="attach"></td>
+            </tr>
+            <thead class="qna_head_write">
+            <tr class="qna_head_write">
+                <td>제목</td>
+                <td colspan="5"><input type="text" class="q_title"></td>
+            </tr>
+            </thead>
+            <tr class="qna_head_write">
+                <td>등록자</td>
+                <td colspan="5"><input type="text" class="q_name"></td>
+            </tr>
+            <tr class="qna_head_write">
+                <td>내용</td>
+                <td colspan="5"><textarea name="" id="q_textarea" cols="230" rows="50"></textarea></td>
+            </tr>
+            <tr class="qna_head_write">
                 <td>첨부파일</td>
                 <td colspan="5"><input type="file" class="attach"></td>
             </tr>
             </table>
             <!-- 버튼세트 -->
             <div class="btn_set">
-                <a href="/Project/review/review_update.html"><button class="update_btn">수정하기</button></a>
-                <a href="/Project/review/review.html"><button class="back_btn">이전으로</button></a>
-                <a href="/Project/review/review.html"><button class="back_btn">삭제하기</button></a>
+                <a href="/Project/qna/qna.html"><button class="save_btn">저장하기</button></a>
+                <a href="/Project/qna/qna.html"><button class="back_btn">이전으로</button></a>
             </div>
-    </section>
+
     <!-- footer -->
     <section id="contact" class="footer">
         <img src="/Project/imgs/logo.png" alt="">
@@ -90,7 +95,7 @@
             <p class="contact__email">회사명: The SWING Co.Ltd 대표자: 박부장 개인정보책임관리자: 박부장</p>
             <p class="contact__email">사업자등록번호: 880-88-01247 통신판매업번호: 제 2020-서울성동-01153 호 주소: 서울시 성동구 왕십리로 115, 6층 609호</p>
             <p class="contact__rights">대여약관 | 개인정보처리방침 | 서비스이용약관 | 위치기반서비스 이용약관 | 구독형 서비스 이용약관 | 월렌탈 서비스 이용약관</p>
-    </section>
+        </section>
         
     </body>
     </html>
