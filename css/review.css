@@ -109,6 +109,7 @@
     padding: 8px 16px;
     transition: all var(--animation-duration);
     min-width: 1280px;
+    z-index: 1;
 }
 #navbar:hover{
   box-shadow: 0 1px 3px 0 rgba(0,0,0,0.50);
@@ -147,22 +148,18 @@
     font-weight: var(--weight-semi-bold);
 }
 
-.navbar__toggle-btn {
-  color: var(--color-black);
-  position: absolute;
-  top: 24px;
-  right: 32px;
-  font-size: 24px;
-  display: none;
-}
 
 /* 배너 */
 .main_banner{
     text-align: center;
+    height: 400px;
 }
 .main_banner img{
     width: 100%;
     margin-top: -35%;
+    position: absolute;
+    display: block;
+    min-width: 1400px;
 }
 
 .main_banner h2{
@@ -171,7 +168,7 @@
 	position: absolute;
 	top: 50%;
 	left: 50%;
-    transform: translate( -50%, -420% );
+    transform: translate( -50%, -570% );
     color: white;
 }
 
@@ -181,13 +178,17 @@
 	position: absolute;
 	top: 50%;
 	left: 50%;
-    transform: translate( -50%, -440% );
+    transform: translate( -50%, -640% );
     color: white;
 }
 
 /* 메인 */
 .review_main{
     padding: 40px;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: -1;
     text-align: center;
     border-bottom: 1px solid #eaeaea;
 }
@@ -391,12 +392,15 @@ input[type="text"]{
 
 .write_btn_div{
     height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1280px;
 }
 
 .write_btn{
     padding: 7px 23px 6px;
     font-size: 11px;
-    margin: 20px 10px;
+    margin: 20px 0;
     letter-spacing: 1px;
     display: inline-block;
     background: #fff;
@@ -410,10 +414,11 @@ input[type="text"]{
 .update_btn{
     padding: 7px 23px 6px;
     font-size: 11px;
-    margin: 20px 10px;
+    margin: 20px 0;
+    color: white;
     letter-spacing: 1px;
     display: inline-block;
-    background: #fff;
+    background: #585858;
     border: 1px solid #d5d5d5;
     text-align: center;
     width: 100px;
@@ -424,7 +429,7 @@ input[type="text"]{
 .delete_btn{
     padding: 7px 23px 6px;
     font-size: 11px;
-    margin: 20px 10px;
+    margin: 20px 0 0 10px;
     letter-spacing: 1px;
     display: inline-block;
     background: #fff;
@@ -442,7 +447,7 @@ input[type="text"]{
     padding: 7px 23px 6px;
     font-size: 11px;
     color: white;
-    margin: 20px 40px 0 20px;
+    margin: 20px 0 0 10px;
     letter-spacing: 1px;
     display: inline-block;
     background: #585858;
@@ -455,7 +460,7 @@ input[type="text"]{
 .back_btn{
     padding: 7px 23px 6px;
     font-size: 11px;
-    margin: 20px 0;
+    margin: 20px 10px;
     letter-spacing: 1px;
     display: inline-block;
     background: #fff;

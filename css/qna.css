@@ -150,10 +150,16 @@ p {
 /* 배너 */
 .main_banner{
     text-align: center;
+    height: 400px;
 }
+
 .main_banner img{
     width: 100%;
     margin-top: -34%;
+    min-width: 1400px;
+    position: absolute;
+    display: block;
+    z-index: -1;
 }
 
 .main_banner h2{
@@ -162,7 +168,7 @@ p {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-    transform: translate( -50%, -440% );
+    transform: translate( -50%, -630% );
     color: white;
 }
 
@@ -172,17 +178,25 @@ p {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-    transform: translate( -50%, -460% );
+    transform: translate( -50%, -700% );
     color: white;
 }
 
 /* 공지사항*/
+.main{
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .myquestion{
     text-align: left;
-    margin-left: 35px;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .qna_main{
-    padding: 40px;
+    padding-top: 40px;
     text-align: center;
     border-bottom: 1px solid #eaeaea;
 }
@@ -315,13 +329,13 @@ p {
     color: #939393;
 }
 
-.qna_page_div{
+.qna_page_box{
     display: flex;
     justify-content: center;
     margin: 30px;
 }
 
-.qna_page_div img{
+.qna_page_box img{
     vertical-align: top;
 }
 
@@ -368,6 +382,10 @@ input, select, textarea{
     border: 1px solid #d5d5d5;
 }
 
+.search_box{
+    margin-bottom: 20px;
+}
+
 input[type="text"]{
     height: 28px;
     width: 162px;
@@ -392,12 +410,15 @@ input[type="text"]{
 
 .write_btn_div{
     height: 50px;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .write_btn{
     padding: 7px 23px 6px;
     font-size: 11px;
-    margin: 20px 40px;
+    margin: 20px 0;
     letter-spacing: 1px;
     display: inline-block;
     background: #fff;
@@ -409,14 +430,17 @@ input[type="text"]{
 
 .btn_set{
     height: 50px;
+    max-width: 1280px;
     margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .save_btn{
     padding: 7px 23px 6px;
     font-size: 11px;
     color: white;
-    margin: 20px 40px 0 20px;
+    margin: 20px 20px 0 20px;
     letter-spacing: 1px;
     display: inline-block;
     background: #585858;
@@ -430,7 +454,7 @@ input[type="text"]{
     padding: 7px 23px 6px;
     font-size: 11px;
     color: white;
-    margin: 20px 40px 0 20px;
+    margin: 20px 0 0 20px;
     letter-spacing: 1px;
     display: inline-block;
     background: #585858;

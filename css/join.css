@@ -145,19 +145,18 @@
   }
   
 
-  .line{
-    display: block;
-    border-bottom: 2px solid #222;
-    width: 40px;
-    margin: 20px auto 20px;
-  }
 
   .main_banner{
     text-align: center;
+    height: 300px;
 }
 .main_banner img{
     width: 100%;
     margin-top: -50%;
+    display: block;
+    position: absolute;
+    z-index: -1;
+    min-width: 1400px;
 }
 
 .main_banner h2{
@@ -166,14 +165,16 @@
 	position: absolute;
 	top: 50%;
 	left: 50%;
-    transform: translate( -50%, -500% );
+    transform: translate( -50%, -600% );
     color: white;
 }
 
 .info_title{
   text-align: left;
-  margin-left: 120px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 50px;
+  max-width: 1280px;
 }
 
 .info_title h3{
@@ -183,7 +184,8 @@
 .required{
   text-align: right;
   font-size: 11px;
-  margin-right: 115px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .join_main{
@@ -193,7 +195,7 @@
 }
 
 .boardForm{
-    width: 1000px;
+    width: 1280px;
     margin-left: auto;
     margin-right: auto;
 }

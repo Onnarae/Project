@@ -146,23 +146,18 @@ table{
 }
 
 
-
-.navbar__toggle-btn {
-  color: var(--color-black);
-  position: absolute;
-  top: 24px;
-  right: 32px;
-  font-size: 24px;
-  display: none;
-}
-
 /* 배너 */
 .main_banner{
     text-align: center;
+    height: 365px;
 }
 .main_banner img{
     width: 100%;
     margin-top: -53%;
+    position: absolute;
+    display: block;
+    min-width: 1400px;
+    z-index: -1;
 }
 
 .main_banner h2{
@@ -171,21 +166,11 @@ table{
 	position: absolute;
 	top: 50%;
 	left: 50%;
-    transform: translate( -50%, -340% );
+    transform: translate( -50%, -490% );
     color: white;
 }
 
-.main_banner .line{
-    border-bottom: 2px solid white;
-    width: 40px;
-    margin: 20px auto 20px;
-    padding: 5px 10px;
-	text-align: center;
-	position: absolute;
-	left: 50%;
-    transform: translate( -50%, -500% );
-    color: white;
-}
+
 
 
 img, fieldset{

@@ -19,41 +19,37 @@
 <body>
     <!-- 네비게이션 바 -->
     <nav id="navbar">
-        <a href="index.html">
-            <img src="/Project/imgs/main_logo.jpeg"  class="navbar__logo"></img>
+        <a href="/Project/index.html">
+            <img src="/Project/imgs/main_logo_bg.png"  class="navbar__logo"></img>
         </a>
             <ul class="navbar__menu">
                 <a href="/Project/notice/notice.html"><li class="navbar__menu__item active" >공지사항</li></a>
                 <a href="/Project/qna/qna.html"><li class="navbar__menu__item" >QNA</li></a>
+                <a href="/Project/faq/faq.html"><li class="navbar__menu__item" >FAQ</li></a>
                 <a href="/Project/product/product.html"><li class="navbar__menu__item" >제품들</li></a>
                 <a href="/Project/review/review.html"><li class="navbar__menu__item" >사용후기</li></a>
+                <a href="/Project/login/myshopping.html"><li class="navbar__menu__item" >My Page</li></a>
                 <a href="/Project/login/login.html"><li class="navbar__menu__item" >Login</li></a>
             </ul>
-
-        <!-- Toggle buttton -->
-        <button class="navbar__toggle-btn">
-            <i class="fas fa-bars"></i>
-        </button>
-        
     </nav>
 
         <section class="notice_main">
             <h2>리스트</h2>
             <table border="1">
             	<tr>
-            		<td style="cursor:pointer;color:#gray;" onclick="area()">
+            		<td style="cursor:pointer;color:gray;" onclick="area()">
             			<h4>사용 가능 지역</h4>
             		</td>
-            		<td style="cursor:pointer;color:#gray;" onclick="date()">
+            		<td style="cursor:pointer;color:gray;" onclick="date()">
             			<h4>최근 날짜</h4>
             		</td>
             	</tr>
             	<tr id="h1" style="display:none;">
-            		<td style="cursor:pointer;color:#gray;" onclick="area1()">경기</td>
-            		<td style="cursor:pointer;color:#gray;" onclick="area2()">충청</td>
-            		<td style="cursor:pointer;color:#gray;" onclick="area3()">경상</td>
-            		<td style="cursor:pointer;color:#gray;" onclick="area4()">전라</td>
-            		<td style="cursor:pointer;color:#gray;" onclick="area5()">강원</td>
+            		<td style="cursor:pointer;color:gray;" onclick="area1()">경기</td>
+            		<td style="cursor:pointer;color:gray;" onclick="area2()">충청</td>
+            		<td style="cursor:pointer;color:gray;" onclick="area3()">경상</td>
+            		<td style="cursor:pointer;color:gray;" onclick="area4()">전라</td>
+            		<td style="cursor:pointer;color:gray;" onclick="area5()">강원</td>
             	</tr>
             	<tr id="a1" style="display:none;">
             		<td>지역1</td>
@@ -362,12 +358,13 @@
         </div>
         </section>
 
-        <!-- 문의? Contact -->
+    <!-- footer -->
     <section id="contact" class="footer">
-        <h1 class="contact__title">SWING</h1>
-        <h2 class="contact__email">이메일</h2>
-        <h2 class="contact__email">링크</h2>
-        <p class="contact__rights">2020 Project - All rights reserved</p>
+        <img src="/Project/imgs/logo.png" alt="">
+            <p class="contact__title">Copyrights SWING 2019. All rights reserved.</p>
+            <p class="contact__email">회사명: The SWING Co.Ltd 대표자: 박부장 개인정보책임관리자: 박부장</p>
+            <p class="contact__email">사업자등록번호: 880-88-01247 통신판매업번호: 제 2020-서울성동-01153 호 주소: 서울시 성동구 왕십리로 115, 6층 609호</p>
+            <p class="contact__rights">대여약관 | 개인정보처리방침 | 서비스이용약관 | 위치기반서비스 이용약관 | 구독형 서비스 이용약관 | 월렌탈 서비스 이용약관</p>
     </section>
     
 </body>
