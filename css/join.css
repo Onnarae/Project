@@ -174,7 +174,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
-  max-width: 1280px;
+  max-width: 1400px;
 }
 
 .info_title h3{
@@ -184,6 +184,7 @@
 .required{
   text-align: right;
   font-size: 11px;
+  min-width: 1280px;
   margin-right: auto;
   margin-left: auto;
 }
