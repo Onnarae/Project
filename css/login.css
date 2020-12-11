@@ -149,14 +149,14 @@ table{
 /* 배너 */
 .main_banner{
     text-align: center;
-    height: 400px;
+    height: 300px;
 }
 .banner_img{
     background-image: url(/Project/imgs/banner22.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
-    height: 400px;
+    height: 300px;
     min-width: 1400px;
     z-index: -1;
 }

@@ -152,7 +152,7 @@ p {
 /* 배너 */
 .main_banner{
     text-align: center;
-    height: 400px;
+    height: 300px;
 }
 
 .banner_img{
@@ -160,7 +160,7 @@ p {
     background-position: center;
     background-size: cover;
     position: relative;
-    height: 400px;
+    height: 300px;
     z-index: -1;
     min-width: 1400px;
 }
