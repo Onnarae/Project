@@ -154,11 +154,13 @@
     text-align: center;
     height: 400px;
 }
-.main_banner img{
-    width: 100%;
-    margin-top: -35%;
-    position: absolute;
-    display: block;
+.banner_img{
+    background-image: url(/Project/imgs/banner4.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 400px;
+    z-index: -1;
     min-width: 1400px;
 }
 
@@ -168,7 +170,7 @@
 	position: absolute;
 	top: 50%;
 	left: 50%;
-    transform: translate( -50%, -570% );
+    transform: translate( -50%, -50% );
     color: white;
 }
 
@@ -178,7 +180,7 @@
 	position: absolute;
 	top: 50%;
 	left: 50%;
-    transform: translate( -50%, -640% );
+    transform: translate( -50%, 70% );
     color: white;
 }
 

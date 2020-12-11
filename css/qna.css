@@ -152,14 +152,14 @@ p {
     text-align: center;
     height: 400px;
 }
-
-.main_banner img{
-    width: 100%;
-    margin-top: -34%;
-    min-width: 1400px;
-    position: absolute;
-    display: block;
+.banner_img{
+    background-image: url(/Project/imgs/banner21.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 400px;
     z-index: -1;
+    min-width: 1400px;
 }
 
 .main_banner h2{
@@ -168,7 +168,7 @@ p {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-    transform: translate( -50%, -630% );
+    transform: translate( -50%, -50% );
     color: white;
 }
 
@@ -178,7 +178,7 @@ p {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-    transform: translate( -50%, -700% );
+    transform: translate( -50%, 70% );
     color: white;
 }
 
