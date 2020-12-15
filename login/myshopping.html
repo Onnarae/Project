@@ -11,53 +11,7 @@
     <script type="text/javascript" src="/project/js/main.js" defer></script>
     <script type="text/javascript" src="/project/js/jquery-3.5.1.js" defer></script>
     <script type="text/javascript" src="/project/js/myshopping.js" defer></script>
-    <script type="text/javascript">
-    function test1(){
-    	if($('#h1').css('display')=='none'){
-    	    $('#h1').show();
-    		$('#h2').hide();
-    		$('#h3').hide();
-    		$('#h4').hide();
-    		$('#h5').hide();
-    	}
-    }
-    function test2(){
-    	if($('#h2').css('display')=='none'){
-    		$('#h1').hide();
-    		$('#h2').show();
-    		$('#h3').hide();
-    		$('#h4').hide();
-    		$('#h5').hide();
-    	}
-    }
-    function test3(){
-    	if($('#h3').css('display')=='none'){
-    		$('#h1').hide();
-    		$('#h2').hide();
-    		$('#h3').show();
-    		$('#h4').hide();
-    		$('#h5').hide();
-    	}
-    }
-    function test4(){
-    	if($('#h4').css('display')=='none'){
-    		$('#h1').hide();
-    		$('#h2').hide();
-    		$('#h3').hide();
-    		$('#h4').show();
-    		$('#h5').hide();
-    	}
-    }
-    function test5(){
-    	if($('#h5').css('display')=='none'){
-    		$('#h1').hide();
-    		$('#h2').hide();
-    		$('#h3').hide();
-    		$('#h4').hide();
-    		$('#h5').show();
-    	}
-    }
-	</script>
+
 </head>
 <body>
     <!-- 네비게이션 바 -->
@@ -75,400 +29,373 @@
                 <a href="/Project/login/login.html"><li class="navbar__menu__item" >Login</li></a>
             </ul>
     </nav>
+    <!-- 배너 -->
+    <div class="main_banner" id="about">
+    <div class="banner_img">
+    <h2></h2>
+    <p></p>
+    </div>
+    </div>
 
-        <section class="mypage_main">
+        <section class="mypage_main_s">
             <h2>마이쇼핑</h2>
-            <table border="1">
-                <colgroup>
-                    <col width="20%">
-                    <col width="20%">
-                    <col width="20%">
-                    <col width="20%">
-                    <col width="20%">
-                </colgroup>
-            	<tr>
-            		<td>
-            			<h6>가용적립금 0원<input type="button" value="조회"></h6>
-            			<h6>사용적립금 0원</h6>
-            			<h6>쿠폰 : 0개 <input type="button" value="조회"></h6>
-            		</td>
-            		<td>
-            			<h6>총적립금 0원</h6>
-            			<h6>총적립금 0원(0회)</h6>
-            		</td>
-            	</tr>
-            </table>
-            <table border="1">
-                <colgroup>
-                    <col width="20%">
-                    <col width="20%">
-                    <col width="20%">
-                    <col width="20%">
-                    <col width="20%">
-                </colgroup>
-            	<tr>
-                    <td colspan="5">나의 주문처리 현황</td>
-                    
-            	</tr>
-            	<tr>
-            		<td>
-            			<h6>입금전</h6>
-            			<h2>0</h2>
-            		</td>
-            		<td>
-            			<h6>배송준비중</h6>
-            			<h2>0</h2>
-            		</td>
-            		<td>
-            			<h6>배송중</h6>
-            			<h2>0</h2>
-            		</td>
-            		<td>
-            			<h6>배송완료</h6>
-            			<h2>0</h2>
-            		</td>
-            		<td>
-            			<h6>취소 : 0</h6>
-            			<h6>교환 : 0</h6>
-            			<h6>반품 : 0</h6>
-            		</td>
-            	</tr>
-            	<tr>
-            		<td style="cursor:pointer;color:#gray;" onclick="test1()">
-            			<h4>ORDER</h4>
-            			<h5>주문내역 조회</h5>
-            		</td>
-            		<td style="cursor:pointer;color:#gray;" onclick="">
-            			<h4>PROFILE</h4>
-            			<h5>회원정보</h5>
-            		</td>
-            		<td style="cursor:pointer;color:#gray;" onclick="test2()">
-            			<h4>MILEAGE</h4>
-            			<h5>적립금</h5>
-            		</td>
-            		<td style="cursor:pointer;color:#gray;" onclick="test3()">
-            			<h4>COUPON</h4>
-            			<h5>쿠폰</h5>
-            		</td>
-            		<td style="cursor:pointer;color:#gray;" onclick="test4()">
-            			<h4>BOARD</h4>
-            			<h5>게시물 관리</h5>
-            		</td>
-            	</tr>
-            </table>
-            <div id = "h1" style="display:none;">
-            <h2>주문</h2>
-				<table border="0">
+            <div class="summary">
+                <ul>
+                    <li>
+                    <strong class="summary_title">가용적립금</strong>
+                    <strong class="data"><span>0원</span></strong>
+                    <a href="" class="button"><img src="/Project/imgs/btn_result.gif" alt=""></a>
+                    </li>
+                    <li>
+                    <strong class="summary_title">총적립금</strong>
+                    <strong class="data"><span>0원</span></strong>
+                    </li>
+                    <li>
+                    <strong class="summary_title">사용</strong>
+                    <strong class="data"><span>0원</span></strong>
+                    </li>
+                    <li>
+                    <strong class="summary_title">총주문</strong>
+                    <strong class="data"><span>0원(0회)</span></strong>
+                    </li>
+                    <li>
+                    <strong class="summary_title">쿠폰</strong>
+                    <strong class="data"><span>0개</span></strong>
+                    <a href="" class="button"><img src="/Project/imgs/btn_result.gif" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="main_state">
+            <div class="title">
+                <h3>나의 주문처리 현황
+                <span>(최근<em>3개월</em>기준)</span></h3>
+            </div>
+            <div class="state">
+                <ul class="state_order">
+                    <li>
+                    <strong>입금전</strong>
+                    <a href="" class="count">
+                    <span >0</span>
+                    </a>
+                    </li>
+                    <li><strong>대여대기중</strong>
+                    <a href="" class="count">
+                    <span >0</span>
+                    </a></li>
+                    <li><strong>대여중</strong>
+                    <a href="" class="count">
+                    <span >0</span>
+                    </a></li>
+                    <li><strong>반납완료</strong>
+                    <a href="" class="count">
+                    <span >0</span>
+                    </a></li>
+                </ul>
+                <ul class="cs">
+                        <li><span class="dot"></span>
+                        <strong>취소 : </strong>
+                        <a href="" class="count"><span>0</span></a></li>
+                        <li><span class="dot"></span>
+                        <strong>교체 : </strong>
+                        <a href="" class="count"><span>0</span></a></li>
+                        </li>
+                    </ul>
+            </div>
+            </div>
+            <div class="mypage_main">
+                <div class="page_main order">
+                    <li>
+                        <p><a href="javascript:order()"><img src="/Project/imgs/mypage_icon_order.png" alt=""></a></p>
+                        <h3><a href="javascript:order()">ORDER</a></h3>
+                        <p><a href="javascript:order()">주문내역조회</a></p>
+                    </li>
+                </div>
+                <div class="page_main order">
+                    <li>
+                        <p><a href=""><img src="/Project/imgs/mypage_icon_mypage.png" alt=""></a></p>
+                        <h3><a href="">PROFILE</a></h3>
+                        <p><a href="">회원정보</a></p>
+                    </li>
+                </div>
+                <div class="page_main order">
+                    <li>
+                        <p><a href="javascript:mileage()"><img src="/Project/imgs/mypage_icon_reserves.png" alt=""></a></p>
+                        <h3><a href="javascript:mileage()">MILEAGE</a></h3>
+                        <p><a href="javascript:mileage()">적립금</a></p>
+                    </li>
+                </div>
+                <div class="page_main order">
+                    <li>
+                        <p><a href="javascript:coupon()"><img src="/Project/imgs/mypage_icon_coupon.png" alt=""></a></p>
+                        <h3><a href="javascript:coupon()">COUPON</a></h3>
+                        <p><a href="javascript:coupon()">쿠폰</a></p>
+                    </li>
+                </div>
+                <div class="page_main order">
+                    <li class="last">
+                        <p><a href="javascript:board()"><img src="/Project/imgs/mypage_icon_order.png" alt=""></a></p>
+                        <h3><a href="javascript:board()">BOARD</a></h3>
+                        <p><a href="javascript:board()">게시물 관리</a></p>
+                    </li>
+                </div>
+            </div>
+            
+            <!-- 주문 시작 -->
+            <div id="ord" style="display:none;">
+            <h3>주문 내역 조회</h3>
+            <p class="line"></p>
+
+            <div class="menu_bar">
+                <ul class="menu">
+                    <li><a href="">주문내역조회 (<span>0</span>)</a></li>
+                    <li><a href="">취소 / 교체 (<span>0</span>)</a></li>
+                </ul>
+            </div>
+
+            <div class="ord_title">
+                <h3>주문 상품 정보</h3>
+            </div>
+            <div id="table_ord" style="display:show;">
+				<table border="1" id="ord_table">
                     <colgroup>
-						<col width="70px">
-						<col width="*">
-						<col width="84px">
-						<col width="80px">
-						<col width="55px">
+						<col width="135px">
+						<col width="93px">
+						<col width="auto">
+						<col width="61px">
+						<col width="111px">
+                        <col width="111px">
+                        <col width="111px">
 					</colgroup>
-                    <thead class="notice_head">
+                    <thead>
                     <tr>
-                        <td>NO</td>
-                        <td>TITLE</td>
-                        <td>POSTED BY</td>
-                        <td>DATE</td>
-                        <td>VIEW</td>
+                        <th scope="col">주문일자</br>[주문번호]</th>
+                        <th scope="col">이미지</th>
+                        <th scope="col">상품정보</th>
+                        <th scope="col">수량</th>
+                        <th scope="col">상품구매금액</th>
+                        <th scope="col">주문처리상태</th>
+                        <th scope="col">취소/교체</th>
                     </tr>
                     </thead>
-                    <tr class="notice_list_item">
-                        <td class="notice_no">공지</td>
-                        <td class="notice_title_fix">[필독] 교환 및 반품 안내</td>
-                        <td class="notice_name">관리자</td>
-                        <td class="notice_date">2020-20-20</td>
-                        <td class="notice_hit">0</td>
-                    </tr>
-
-                    <tr class="notice_list_item">
-                        <td class="notice_no">공지</td>
-                        <td class="notice_title_fix">[필독] 결제 수단 안내</td>
-                        <td class="notice_name">관리자</td>
-                        <td class="notice_date">2020-20-20</td>
-                        <td class="notice_hit">0</td>
-                    </tr>
-
-                    <tr class="notice_list_item">
-                        <td class="notice_no">01</td>
-                        <td class="notice_title">제목</td>
-                        <td class="notice_name">관리자</td>
-                        <td class="notice_date">2020-20-20</td>
-                        <td class="notice_hit">0</td>
-                    </tr>
-                    <tr class="notice_list_item">
-                        <td class="notice_no">02</td>
-                        <td class="notice_title">제목</td>
-                        <td class="notice_name">관리자</td>
-                        <td class="notice_date">2020-20-20</td>
-                        <td class="notice_hit">0</td>
-                    </tr>
-                    <tr class="notice_list_item">
-                        <td class="notice_no">03</td>
-                        <td class="notice_title">제목</td>
-                        <td class="notice_name">관리자</td>
-                        <td class="notice_date">2020-20-20</td>
-                        <td class="notice_hit">0</td>
-                    </tr>
                     </table>
-                <div class="notice_page_div">
+                    <p class="message">주문 내역이 없습니다.</p>
+                <div class="paging_div">
                     <a><img src="/Project/imgs/left_button.gif"></a>
-                        <ul class="notice_page">
+                        <ul class="paging">
                             <li><a href=""class="this_page">1</a></li>
                             <li><a href=""class="">2</a></li>
                         </ul>
                     <a><img src="/Project/imgs/right_button.gif"></a>
                 </div>
+            </div>
 
-                <div>
-                    <select name="" id="search">
-                    <option value="">전체</option>
-                    <option value="">제목</option>
-                    <option value="">이름</option>
-                    <option value="">날짜</option>
-                    </select>
-                    <input type="text">
-                    <button class="search_btn">SEARCH</button>
+            <div id="table_ord_cs" style="display:none;">
+				<table border="1" id="ord_cs_table">
+                    <colgroup>
+						<col width="135px">
+						<col width="93px">
+						<col width="auto">
+						<col width="61px">
+						<col width="111px">
+                        <col width="111px">
+                        <col width="111px">
+					</colgroup>
+                    <thead>
+                    <tr>
+                        <th scope="col">주문일자</br>[주문번호]</th>
+                        <th scope="col">이미지</th>
+                        <th scope="col">상품정보</th>
+                        <th scope="col">수량</th>
+                        <th scope="col">상품구매금액</th>
+                        <th scope="col">주문처리상태</th>
+                        <th scope="col">취소/교체</th>
+                    </tr>
+                    </thead>
+                    </table>
+                    <p class="message">주문 내역이 없습니다.</p>
+                <div class="paging_div">
+                    <a><img src="/Project/imgs/left_button.gif"></a>
+                        <ul class="paging">
+                            <li><a href=""class="this_page">1</a></li>
+                            <li><a href=""class="">2</a></li>
+                        </ul>
+                    <a><img src="/Project/imgs/right_button.gif"></a>
                 </div>
+            </div>
+
+                
 			</div>
 			<!-- 주문 끝 -->
-            <div id = "h2" style="display:none;">
-            <h2>마일리지</h2>
-				<table border="0">
+
+
+
+
+            <!-- 마일리지 시작-->
+            <div id="mil" style="display:none;">
+            <h3>마일리지</h3>
+            <p class="line"></p>
+
+            <div class="mil_summary">
+                <ul>
+                    <li>
+                    <strong class="summary_title">총적립금</strong>
+                    <strong class="data"><span>0원</span></strong>
+                    </li>
+                    <li>
+                    <strong class="summary_title">사용가능적립금</strong>
+                    <strong class="data"><span>0원</span></strong>
+                    </li>
+                    <li>
+                    <strong class="summary_title">사용된적립금</strong>
+                    <strong class="data"><span>0원</span></strong>
+                    </li>
+                    <li>
+                    <strong class="summary_title">미가용적립금</strong>
+                    <strong class="data"><span>0원</span></strong>
+                    </li>
+                    <li>
+                    <strong class="summary_title">환불예정 적립금</strong>
+                    <strong class="data"><span>0개</span></strong>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="menu_bar">
+                <ul class="menu">
+                    <li><a href="">적립내역보기 (<span>0</span>)</a></li>
+                    <li><a href="">미가용적립내용보기 (<span>0</span>)</a></li>
+                    <li><a href="">미가용쿠폰/회원등급적립내역 (<span>0</span>)</a></li>
+                </ul>
+            </div>
+				<table border="1" id="mil_table">
                     <colgroup>
-						<col width="70px">
-						<col width="*">
-						<col width="84px">
-						<col width="80px">
-						<col width="55px">
+						<col width="15%%">
+						<col width="15%%">
+						<col width="25%%">
+						<col width="auto">
 					</colgroup>
-                    <thead class="notice_head">
+                    <thead>
                     <tr>
-                        <td>NO</td>
-                        <td>TITLE</td>
-                        <td>POSTED BY</td>
-                        <td>DATE</td>
-                        <td>VIEW</td>
+                        <th scope="col">주문날짜</th>
+                        <th scope="col">적립금</th>
+                        <th scope="col">관련 주문</th>
+                        <th scope="col">내용</th>
                     </tr>
                     </thead>
-                    <tr class="notice_list_item">
-                        <td class="notice_no">공지</td>
-                        <td class="notice_title_fix">[필독] 교환 및 반품 안내</td>
-                        <td class="notice_name">관리자</td>
-                        <td class="notice_date">2020-20-20</td>
-                        <td class="notice_hit">0</td>
-                    </tr>
-
-                    <tr class="notice_list_item">
-                        <td class="notice_no">공지</td>
-                        <td class="notice_title_fix">[필독] 결제 수단 안내</td>
-                        <td class="notice_name">관리자</td>
-                        <td class="notice_date">2020-20-20</td>
-                        <td class="notice_hit">0</td>
-                    </tr>
-
-                    <tr class="notice_list_item">
-                        <td class="notice_no">01</td>
-                        <td class="notice_title">제목</td>
-                        <td class="notice_name">관리자</td>
-                        <td class="notice_date">2020-20-20</td>
-                        <td class="notice_hit">0</td>
-                    </tr>
-                    <tr class="notice_list_item">
-                        <td class="notice_no">02</td>
-                        <td class="notice_title">제목</td>
-                        <td class="notice_name">관리자</td>
-                        <td class="notice_date">2020-20-20</td>
-                        <td class="notice_hit">0</td>
-                    </tr>
-                    <tr class="notice_list_item">
-                        <td class="notice_no">03</td>
-                        <td class="notice_title">제목</td>
-                        <td class="notice_name">관리자</td>
-                        <td class="notice_date">2020-20-20</td>
-                        <td class="notice_hit">0</td>
-                    </tr>
                     </table>
-                <div class="notice_page_div">
+                    <p class="message">적립금 내역이 없습니다.</p>
+                <div class="paging_div">
                     <a><img src="/Project/imgs/left_button.gif"></a>
-                        <ul class="notice_page">
+                        <ul class="paging">
                             <li><a href=""class="this_page">1</a></li>
                             <li><a href=""class="">2</a></li>
                         </ul>
                     <a><img src="/Project/imgs/right_button.gif"></a>
-                </div>
-
-                <div>
-                    <select name="" id="search">
-                    <option value="">전체</option>
-                    <option value="">제목</option>
-                    <option value="">이름</option>
-                    <option value="">날짜</option>
-                    </select>
-                    <input type="text">
-                    <button class="search_btn">SEARCH</button>
                 </div>
 			</div>
-			<!-- 마일리지끝 -->
-            <div id = "h3" style="display:none;">
-            <h2>쿠폰</h2>
-				<table border="0">
+			<!-- 마일리지 끝 -->
+
+
+
+
+            <!-- 쿠폰 시작-->
+            <div id="cou" style="display:none;">
+            <h3>마이쿠폰</h3>
+            <p class="line"></p>
+            <div class="cou_title">
+                <h3>마이 쿠폰 목록</h3>
+                <p>사용가능 쿠폰 : 0장</p>
+            </div>
+				<table border="1" id="cou_table">
                     <colgroup>
-						<col width="70px">
-						<col width="*">
-						<col width="84px">
-						<col width="80px">
-						<col width="55px">
+						<col width="45px">
+						<col width="auto">
+						<col width="130px">
+                        <col width="130px">
+                        <col width="130px">
+                        <col width="130px">
+                        <col width="170px">
+						
 					</colgroup>
-                    <thead class="notice_head">
+                    <thead>
                     <tr>
-                        <td>NO</td>
-                        <td>TITLE</td>
-                        <td>POSTED BY</td>
-                        <td>DATE</td>
-                        <td>VIEW</td>
+                        <th scope="col">번호</th>
+                        <th scope="col">쿠폰명</th>
+                        <th scope="col">쿠폰적용 지역</th>
+                        <th scope="col">구매금액</th>
+                        <th scope="col">결제수단</th>
+                        <th scope="col">쿠폰혜택</th>
+                        <th scope="col">사용가능기간</th>
                     </tr>
                     </thead>
-                    <tr class="notice_list_item">
-                        <td class="notice_no">공지</td>
-                        <td class="notice_title_fix">[필독] 교환 및 반품 안내</td>
-                        <td class="notice_name">관리자</td>
-                        <td class="notice_date">2020-20-20</td>
-                        <td class="notice_hit">0</td>
-                    </tr>
-
-                    <tr class="notice_list_item">
-                        <td class="notice_no">공지</td>
-                        <td class="notice_title_fix">[필독] 결제 수단 안내</td>
-                        <td class="notice_name">관리자</td>
-                        <td class="notice_date">2020-20-20</td>
-                        <td class="notice_hit">0</td>
-                    </tr>
-
-                    <tr class="notice_list_item">
-                        <td class="notice_no">01</td>
-                        <td class="notice_title">제목</td>
-                        <td class="notice_name">관리자</td>
-                        <td class="notice_date">2020-20-20</td>
-                        <td class="notice_hit">0</td>
-                    </tr>
-                    <tr class="notice_list_item">
-                        <td class="notice_no">02</td>
-                        <td class="notice_title">제목</td>
-                        <td class="notice_name">관리자</td>
-                        <td class="notice_date">2020-20-20</td>
-                        <td class="notice_hit">0</td>
-                    </tr>
-                    <tr class="notice_list_item">
-                        <td class="notice_no">03</td>
-                        <td class="notice_title">제목</td>
-                        <td class="notice_name">관리자</td>
-                        <td class="notice_date">2020-20-20</td>
-                        <td class="notice_hit">0</td>
-                    </tr>
                     </table>
-                <div class="notice_page_div">
+                    <p class="message">보유하고 계신 쿠폰 내역이 없습니다.</p>
+                <div class="paging_div">
                     <a><img src="/Project/imgs/left_button.gif"></a>
-                        <ul class="notice_page">
+                        <ul class="paging">
                             <li><a href=""class="this_page">1</a></li>
                             <li><a href=""class="">2</a></li>
                         </ul>
                     <a><img src="/Project/imgs/right_button.gif"></a>
-                </div>
-
-                <div>
-                    <select name="" id="search">
-                    <option value="">전체</option>
-                    <option value="">제목</option>
-                    <option value="">이름</option>
-                    <option value="">날짜</option>
-                    </select>
-                    <input type="text">
-                    <button class="search_btn">SEARCH</button>
                 </div>
 			</div>
 			<!-- 쿠폰 끝 -->
-            <div id = "h4" style="display:none;">
-            <h2>게시물</h2>
-				<table border="0">
+
+
+
+
+
+
+            <!--게시물 시작-->
+            <div id="boa" style="display:none;">
+            <div class="boa_title">
+            <h3>게시물 관리</h3>
+            <p class="line"></p>
+            </div>
+
+                <div id="boa_category">
+                    <p>분류 선택
+                    <select name="">
+                    <option value="">작성 일자별</option>
+                    <option value="">분류별</option>
+                    </select>
+                    </p>
+                </div>
+			
+				<table border="1" id="boa_table">
                     <colgroup>
 						<col width="70px">
-						<col width="*">
+						<col width="135px">
+						<col width="auto">
 						<col width="84px">
 						<col width="80px">
-						<col width="55px">
+                        <col width="55px">
 					</colgroup>
-                    <thead class="notice_head">
+                    <thead>
                     <tr>
-                        <td>NO</td>
-                        <td>TITLE</td>
-                        <td>POSTED BY</td>
-                        <td>DATE</td>
-                        <td>VIEW</td>
+                        <th>번호</th>
+                        <th>분류</th>
+                        <th>제목</th>
+                        <th>작성자</th>
+                        <th>작성일</th>
+                        <th>조회</th>
                     </tr>
                     </thead>
-                    <tr class="notice_list_item">
-                        <td class="notice_no">공지</td>
-                        <td class="notice_title_fix">[필독] 교환 및 반품 안내</td>
-                        <td class="notice_name">관리자</td>
-                        <td class="notice_date">2020-20-20</td>
-                        <td class="notice_hit">0</td>
-                    </tr>
-
-                    <tr class="notice_list_item">
-                        <td class="notice_no">공지</td>
-                        <td class="notice_title_fix">[필독] 결제 수단 안내</td>
-                        <td class="notice_name">관리자</td>
-                        <td class="notice_date">2020-20-20</td>
-                        <td class="notice_hit">0</td>
-                    </tr>
-
-                    <tr class="notice_list_item">
-                        <td class="notice_no">01</td>
-                        <td class="notice_title">제목</td>
-                        <td class="notice_name">관리자</td>
-                        <td class="notice_date">2020-20-20</td>
-                        <td class="notice_hit">0</td>
-                    </tr>
-                    <tr class="notice_list_item">
-                        <td class="notice_no">02</td>
-                        <td class="notice_title">제목</td>
-                        <td class="notice_name">관리자</td>
-                        <td class="notice_date">2020-20-20</td>
-                        <td class="notice_hit">0</td>
-                    </tr>
-                    <tr class="notice_list_item">
-                        <td class="notice_no">03</td>
-                        <td class="notice_title">제목</td>
-                        <td class="notice_name">관리자</td>
-                        <td class="notice_date">2020-20-20</td>
-                        <td class="notice_hit">0</td>
-                    </tr>
                     </table>
-                <div class="notice_page_div">
+                    <p class="message">게시물이 없습니다.</p>
+                <div class="paging_div">
                     <a><img src="/Project/imgs/left_button.gif"></a>
-                        <ul class="notice_page">
+                        <ul class="paging">
                             <li><a href=""class="this_page">1</a></li>
                             <li><a href=""class="">2</a></li>
                         </ul>
                     <a><img src="/Project/imgs/right_button.gif"></a>
                 </div>
-
-                <div>
-                    <select name="" id="search">
-                    <option value="">전체</option>
-                    <option value="">제목</option>
-                    <option value="">이름</option>
-                    <option value="">날짜</option>
-                    </select>
-                    <input type="text">
-                    <button class="search_btn">SEARCH</button>
-                </div>
-			</div>
+            </div>
+                
 			<!-- 게시판 끝 -->
-            <div id = "h5" style="display:none;">
+            <!-- 주소록 시작 -->
+            <div id="add" style="display:none;">
             <h2>배송 주소록</h2>
 				<table border="0">
                     <colgroup>
@@ -545,6 +472,7 @@
                     <button class="search_btn">SEARCH</button>
                 </div>
 			</div>
+            <!-- 주소록 끝 -->
         </section>
 
     <!-- footer -->

@@ -12,6 +12,7 @@
     <script src="/project/js/main.js" defer></script>
     <script src="../js/jquery-3.5.1.js"></script>
     <script src="../js/area_date.js"></script>
+    <script src="../js/product_detail.js"></script>
     <script type="text/javascript">
     
 	</script>
@@ -32,9 +33,17 @@
                 <a href="/Project/login/login.html"><li class="navbar__menu__item" >Login</li></a>
             </ul>
     </nav>
+    <!-- 배너 -->
+    <div class="main_banner" id="about">
+    <div class="banner_img">
+    <h2></h2>
+    <p></p>
+    </div>
+    </div>
 
         <section class="product_main">
-            <h2>리스트</h2>
+            <h2>제품</h2>
+            <p class="line"></p>
             <table border="1">
             	<tr>
             		<td style="cursor:pointer;color:gray;" onclick="area()">
@@ -54,7 +63,7 @@
             <ul class="grid1">
             <li class="item_list">
             <div class="product_img">
-                <a href=""><img src="/Project/imgs/kickboard1.png" alt="kickboard">
+                <a href="#layer-popup" class="product_open"><img src="/Project/imgs/TC-01.png" alt="kickboard">
                 </a>
             </div>
             <div class="product_discription">
@@ -63,71 +72,124 @@
             </div>  
             </li>
             <li class="item_list">
-                <div class="product_img">
-                    <a href=""><img src="/Project/imgs/kickboard1.png" alt="kickboard">
-                    </a>
-                </div>
-                <div class="product_discription">
-                    <strong class="name">TC-01</strong>
-                    <span class="pric">5000원~</span>
-                </div>  
-                </li>
-                <li class="item_list">
-                    <div class="product_img">
-                        <a href=""><img src="/Project/imgs/kickboard1.png" alt="kickboard">
-                        </a>
-                    </div>
-                    <div class="product_discription">
-                        <strong class="name">TC-01</strong>
-                        <span class="pric">5000원~</span>
-                    </div>  
-                    </li>
-                    <li class="item_list">
-                        <div class="product_img">
-                            <a href=""><img src="/Project/imgs/kickboard1.png" alt="kickboard">
-                            </a>
-                        </div>
-                        <div class="product_discription">
-                            <strong class="name">TC-01</strong>
-                            <span class="pric">5000원~</span>
-                        </div>  
-                        </li>
-                        <li class="item_list">
-                            <div class="product_img">
-                                <a href=""><img src="/Project/imgs/kickboard1.png" alt="kickboard">
-                                </a>
-                            </div>
-                            <div class="product_discription">
-                                <strong class="name">TC-01</strong>
-                                <span class="pric">5000원~</span>
-                            </div>  
-                            </li>
-                            <li class="item_list">
-                                <div class="product_img">
-                                    <a href=""><img src="/Project/imgs/kickboard1.png" alt="kickboard">
-                                    </a>
-                                </div>
-                                <div class="product_discription">
-                                    <strong class="name">TC-01</strong>
-                                    <span class="pric">5000원~</span>
-                                </div>  
-                                </li>
-                                <li class="item_list">
-                                    <div class="product_img">
-                                        <a href=""><img src="/Project/imgs/kickboard1.png" alt="kickboard">
-                                        </a>
-                                    </div>
-                                    <div class="product_discription">
-                                        <strong class="name">TC-01</strong>
-                                        <span class="pric">5000원~</span>
-                                    </div>  
-                                    </li>
+            <div class="product_img">
+                <a href="#layer-popup" class="product_open"><img src="/Project/imgs/TC-02.png" alt="kickboard">
+                </a>
+            </div>
+            <div class="product_discription">
+                <strong class="name">TC-02</strong>
+                <span class="pric">5000원~</span>
+            </div>  
+            </li>
+            <li class="item_list">
+            <div class="product_img">
+                <a href="#layer-popup" class="product_open"><img src="/Project/imgs/TC-03.png" alt="kickboard">
+                </a>
+            </div>
+            <div class="product_discription">
+                <strong class="name">TC-03</strong>
+                <span class="pric">5000원~</span>
+            </div>  
+            </li>
+            <li class="item_list">
+            <div class="product_img">
+                <a href="#layer-popup" class="product_open"><img src="/Project/imgs/TC-04.png" alt="kickboard">
+                </a>
+            </div>
+            <div class="product_discription">
+                <strong class="name">TC-04</strong>
+                <span class="pric">5000원~</span>
+            </div>  
+            </li>
+            <li class="item_list">
+            <div class="product_img">
+                <a href="#layer-popup" class="product_open"><img src="/Project/imgs/TC-05.png" alt="kickboard">
+                </a>
+            </div>
+            <div class="product_discription">
+                <strong class="name">TC-05</strong>
+                <span class="pric">5000원~</span>
+            </div>  
+            </li>
+            <li class="item_list">
+            <div class="product_img">
+                <a href="#layer-popup" class="product_open"><img src="/Project/imgs/TC-06.png" alt="kickboard">
+                </a>
+            </div>
+            <div class="product_discription">
+                <strong class="name">TC-06</strong>
+                <span class="pric">5000원~</span>
+            </div>  
+            </li>
+            <li class="item_list">
+            <div class="product_img">
+                <a href="#layer-popup" class="product_open"><img src="/Project/imgs/TC-07.png" alt="kickboard">
+                </a>
+            </div>
+            <div class="product_discription">
+                <strong class="name">TC-07</strong>
+                <span class="pric">5000원~</span>
+            </div>  
+            </li>
+            <li class="item_list">
+            <div class="product_img">
+                <a href="#layer-popup" class="product_open"><img src="/Project/imgs/TC-08.png" alt="kickboard">
+                </a>
+            </div>
+            <div class="product_discription">
+                <strong class="name">TC-08</strong>
+                <span class="pric">5000원~</span>
+            </div>  
+            </li>
+            <li class="item_list">
+            <div class="product_img">
+                <a href="#layer-popup" class="product_open"><img src="/Project/imgs/TC-09.png" alt="kickboard">
+                </a>
+            </div>
+            <div class="product_discription">
+                <strong class="name">TC-09</strong>
+                <span class="pric">5000원~</span>
+            </div>  
+            </li>
+            <li class="item_list">
+            <div class="product_img">
+                <a href="#layer-popup" class="product_open"><img src="/Project/imgs/TC-10.png" alt="kickboard">
+                </a>
+            </div>
+            <div class="product_discription">
+                <strong class="name">TC-10</strong>
+                <span class="pric">5000원~</span>
+            </div>  
+            </li>
+            <li class="item_list">
+            <div class="product_img">
+                <a href="#layer-popup" class="product_open"><img src="/Project/imgs/TC-11.png" alt="kickboard">
+                </a>
+            </div>
+            <div class="product_discription">
+                <strong class="name">TC-11</strong>
+                <span class="pric">5000원~</span>
+            </div>  
+            </li>
+            <li class="item_list">
+            <div class="product_img">
+                <a href="#layer-popup" class="product_open"><img src="/Project/imgs/TC-12.png" alt="kickboard">
+                </a>
+            </div>
+            <div class="product_discription">
+                <strong class="name">TC-12</strong>
+                <span class="pric">5000원~</span>
+            </div>  
+            </li>
             </ul>
            
-
-
-
-
+        <div class="layer-popup" id="layer-popup">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                아 또 디자인 해야하네
+                </div>
+            </div>
+        </div>
 
         </section>
 

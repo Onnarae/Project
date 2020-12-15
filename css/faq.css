@@ -120,6 +120,14 @@ body{
   z-index: 1;
 }
 
+#navbar img{
+    content: url("/Project/imgs/logo.png");
+}
+
+#navbar.navbar--fixed img{
+content: url("/Project/imgs/main_logo_bg.png");
+}
+
 #navbar.navbar--fixed .navbar__menu__item{
     color: var(--color-grey);
 }

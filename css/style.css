@@ -145,15 +145,6 @@
   
 
 
-  .navbar__toggle-btn {
-    color: var(--color-black);
-    position: absolute;
-    top: 24px;
-    right: 32px;
-    font-size: 24px;
-    display: none;
-  }
-
   /* 메인화면 */
   #home{  
   padding: 100px;
