@@ -3,8 +3,8 @@
  */
 	function answer(){
     		if($('#answer').css('display')=='none'){
-        		$('#answer').show();
+        		$('#answer').css('display','');
         	}else{
-        		$('#answer').hide();
+        		$('#answer').css('display','none');
         	}
     }
