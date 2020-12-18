@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/Project/css/faq.css"/>
     <script src="/project/js/jquery-3.5.1.js"></script>
     <script src="/project/js/main.js" defer></script>
-    <script src="/js/faq_list.js" defer></script>
+    <script src="/project/js/faq_list.js" defer></script>
 </head>
 <body>
     <!-- 네비게이션 바 -->
@@ -52,10 +52,10 @@
                         <td>POSTED BY</td>
                     </tr>
                     </thead>
-                    <tr class="faq_list_item" onclick="answer()">
+                    <tr class="faq_list_item" >
                         <td class="faq_no">00</td>
                         <td class="faq_category">카테고리</td>
-                        <td class="faq_title" style="cursor:pointer;color:gray;" >제목</td>
+                        <td class="faq_title" onclick="answer()" style="cursor:pointer;color:gray;" >제목</td>
                         <td class="faq_name">관리자</td>
                     </tr>
                     <tr class="faq_list_item" id="answer" style="display:none;">

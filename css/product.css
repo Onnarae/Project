@@ -279,7 +279,7 @@ content: url("/Project/imgs/main_logo_bg.png");
 }
 
 .modal-dialog{
-  width: 1000px;
+  width: 1280px;
   margin: 40px auto;
   background-color: #fff;
 }
@@ -287,9 +287,73 @@ content: url("/Project/imgs/main_logo_bg.png");
 .modal-content{
   padding: 10px 15px;
   text-align: center;
-  line-height: 600px;
+  height: 700px;
+}
+
+.detail_img{
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+.detail_img img{
+  margin-top: 40px;
+  width: 300px;
+  height: 400px;
+  background-color: #7c7979;
+}
+
+.detail_info{
+  float: right;
+  width: 50%;
+  height: 100%;
+}
+
+.detail_list{
+  height: 92%;
+  vertical-align: top;
+}
+
+.detail_list .hide{
+  display: none;
+}
+
+.detail_list li{
+  width: 600px;
+  height: 80px;
+  border: 1px solid #e8e8e8;
+}
+
+.detail_list li p{
+  display: inline;
+  float: left;
+  margin: 25px 0px 5px 20px;
+  text-align: left;
+  color: gray;
+  width: 120px;
+}
+
+.detail_list li .imgs{
+float: right;
+margin: 30px 20px 0px 0px
   
 }
+
+.detail_list li .imgs i{
+  font-size: 20px;
+  color: gray;
+}
+
+.detail_price{
+  height: 8%;
+  
+}
+
+.detail_price p{
+  vertical-align: bottom;
+  text-align: left;
+}
+
 
 
 /* 하단 */

@@ -1,49 +1,51 @@
-/**
-myshopping hide and show
- */
+
+
+
+
 
 	function order(){
     	if($('#ord').css('display')=='none'){
-    	    $('#ord').show();
-    		$('#mil').hide();
-    		$('#cou').hide();
-    		$('#boa').hide();
-    		$('#add').hide();
+    	    $('#ord').slideDown();
+    		$('#mil').slideUp();
+    		$('#cou').slideUp();;
+    		$('#boa').slideUp();;
+    		$('#add').slideUp();;
     	}
     }
     function mileage(){
     	if($('#mil').css('display')=='none'){
-    		$('#ord').hide();
-    		$('#mil').show();
-    		$('#cou').hide();
-    		$('#boa').hide();
-    		$('#add').hide();
+    		$('#ord').slideUp();;
+    		$('#mil').slideDown();
+    		$('#cou').slideUp();;
+    		$('#boa').slideUp();;
+    		$('#add').slideUp();;
     	}
     }
     function coupon(){
     	if($('#cou').css('display')=='none'){
-    		$('#ord').hide();
-    		$('#mil').hide();
-    		$('#cou').show();
-    		$('#boa').hide();
-    		$('#add').hide();
+    		$('#ord').slideUp();;
+    		$('#mil').slideUp();;
+    		$('#cou').slideDown();
+    		$('#boa').slideUp();;
+    		$('#add').slideUp();;
     	}
     }
     function board(){
     	if($('#boa').css('display')=='none'){
-    		$('#ord').hide();
-    		$('#mil').hide();
-    		$('#cou').hide();
-    		$('#boa').show();
-    		$('#add').hide();
+    		$('#ord').slideUp();;
+    		$('#mil').slideUp();;
+    		$('#cou').slideUp();;
+    		$('#boa').slideDown();
+    		$('#add').slideUp();;
     	}
     }
     function address(){
     	if($('#add').css('display')=='none'){
-    		$('#ord').hide();
-    		$('#mil').hide();
-    		$('#cou').hide();
-    		$('#boa').hide();
-    		$('#add').show();
+    		$('#ord').slideUp();;
+    		$('#mil').slideUp();;
+    		$('#cou').slideUp();;
+    		$('#boa').slideUp();;
+    		$('#add').slideDown();
     	}
-    }
+	}
+	

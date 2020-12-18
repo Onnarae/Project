@@ -103,35 +103,35 @@
             </div>
             </div>
             <div class="mypage_main">
-                <div class="page_main order">
+                <div class="page_main icon">
                     <li>
                         <p><a href="javascript:order()"><img src="/Project/imgs/mypage_icon_order.png" alt=""></a></p>
                         <h3><a href="javascript:order()">ORDER</a></h3>
                         <p><a href="javascript:order()">주문내역조회</a></p>
                     </li>
                 </div>
-                <div class="page_main order">
+                <div class="page_main icon">
                     <li>
                         <p><a href=""><img src="/Project/imgs/mypage_icon_mypage.png" alt=""></a></p>
                         <h3><a href="">PROFILE</a></h3>
                         <p><a href="">회원정보</a></p>
                     </li>
                 </div>
-                <div class="page_main order">
+                <div class="page_main icon">
                     <li>
                         <p><a href="javascript:mileage()"><img src="/Project/imgs/mypage_icon_reserves.png" alt=""></a></p>
                         <h3><a href="javascript:mileage()">MILEAGE</a></h3>
                         <p><a href="javascript:mileage()">적립금</a></p>
                     </li>
                 </div>
-                <div class="page_main order">
+                <div class="page_main icon">
                     <li>
                         <p><a href="javascript:coupon()"><img src="/Project/imgs/mypage_icon_coupon.png" alt=""></a></p>
                         <h3><a href="javascript:coupon()">COUPON</a></h3>
                         <p><a href="javascript:coupon()">쿠폰</a></p>
                     </li>
                 </div>
-                <div class="page_main order">
+                <div class="page_main icon">
                     <li class="last">
                         <p><a href="javascript:board()"><img src="/Project/imgs/mypage_icon_order.png" alt=""></a></p>
                         <h3><a href="javascript:board()">BOARD</a></h3>
@@ -141,22 +141,22 @@
             </div>
             
             <!-- 주문 시작 -->
-            <div id="ord" style="display:none;">
+            <div id="ord" class="hide">
             <h3>주문 내역 조회</h3>
             <p class="line"></p>
 
             <div class="menu_bar">
                 <ul class="menu">
-                    <li><a href="">주문내역조회 (<span>0</span>)</a></li>
-                    <li><a href="">취소 / 교체 (<span>0</span>)</a></li>
+                    <li class="menu_tab selected"><a href="">주문내역조회 (<span>0</span>)</a></li>
+                    <li class="menu_tab"><a href="">취소 / 교체 (<span>0</span>)</a></li>
                 </ul>
             </div>
 
             <div class="ord_title">
                 <h3>주문 상품 정보</h3>
             </div>
-            <div id="table_ord" style="display:show;">
-				<table border="1" id="ord_table">
+            <div id="table_ord">
+				<table border="1" id="ord_table" style="display:show;">
                     <colgroup>
 						<col width="135px">
 						<col width="93px">
@@ -262,9 +262,9 @@
 
             <div class="menu_bar">
                 <ul class="menu">
-                    <li><a href="">적립내역보기 (<span>0</span>)</a></li>
-                    <li><a href="">미가용적립내용보기 (<span>0</span>)</a></li>
-                    <li><a href="">미가용쿠폰/회원등급적립내역 (<span>0</span>)</a></li>
+                    <li class="menu_bar selected"><a href="">적립내역보기 (<span>0</span>)</a></li>
+                    <li class="menu_bar"><a href="">미가용적립내용보기 (<span>0</span>)</a></li>
+                    <li class="menu_bar"><a href="">미가용쿠폰/회원등급적립내역 (<span>0</span>)</a></li>
                 </ul>
             </div>
 				<table border="1" id="mil_table">

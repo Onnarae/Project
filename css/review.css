@@ -127,6 +127,14 @@
     color: var(--color-grey);
 }
 
+#navbar img{
+    content: url("/Project/imgs/logo.png");
+  }
+  
+  #navbar.navbar--fixed img{
+  content: url("/Project/imgs/main_logo_bg.png");
+  }
+
 .navbar__menu {
   display: flex;
 }

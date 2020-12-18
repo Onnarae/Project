@@ -1,7 +1,7 @@
 	function answer(){
-    		if($('#answer').css('display')==='none'){
-        		$('#answer').css('display','');
+    		if($('#answer').css('display')=='none'){
+        		$('#answer').show()
         	}else{
-        		$('#answer').css('display','none');
+        		$('#answer').hide();
         	}
     }

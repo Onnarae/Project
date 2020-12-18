@@ -121,6 +121,13 @@
   #navbar.navbar--fixed .navbar__menu__item{
     color: var(--color-grey);
 }
+#navbar img{
+  content: url("/Project/imgs/logo.png");
+}
+
+#navbar.navbar--fixed img{
+content: url("/Project/imgs/main_logo_bg.png");
+}
 
   .navbar__menu {
     display: flex;
@@ -365,7 +372,7 @@ left: 50%;
   background: #f5f5f5;
 }
 
-.page_main .order{
+.page_main .icon{
   width: 20%;
 }
 
@@ -396,12 +403,7 @@ left: 50%;
     display: block;
     padding: 0 0 0 0;
 }
-
-/* 주문 테이블 */
-
-#ord{
-  padding-top: 30px;
-}
+/* 메뉴바 */
 
 .menu_bar{
   position: relative;
@@ -442,6 +444,27 @@ left: 50%;
     text-align: center;
     background: #fff;
 }
+
+.menu li.selected a{
+  position: relative;
+    top: -1px;
+    right: -1px;
+    margin: 0 0 0 0 ;
+    border: 1px solid #e1e1e1;
+    border-bottom: 0;
+    color: #222;
+    font-weight: bold;
+    background: #fff;
+}
+/* 주문 테이블 */
+
+#ord{
+  padding-top: 30px;
+  display: none;
+}
+
+
+
 
 .ord_title{
   margin: 40px 0 10px 10px;
